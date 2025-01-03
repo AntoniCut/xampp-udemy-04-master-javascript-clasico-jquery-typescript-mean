@@ -1,0 +1,72 @@
+<!--  --------------------------------------------------------------------------  -->
+<!--  ----------  /master-javascript-clasico-jquery-typescript-mean/  ----------  -->
+<!--  ----------  /02-javascript-fundamentos/  ---------------------------------  -->
+<!--  ----------  /index.html  -------------------------------------------------  -->
+<!--  --------------------------------------------------------------------------  -->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon-JS-2.ico" type="image/x-icon">
+    <title> Curso de JavaScript Clásico - Fundamentos </title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <script>
+        //alert("Hola Mundo - Fundamentos de JavaScript");
+    </script>
+</head>
+
+<body>
+
+    <hr>
+    <h1>Curso de JavaScript Clásico - Fundamentos</h1>
+    <hr>
+
+    <!-- Enlaces que cargan scripts -->
+    <a href="#" data-script="./assets/js/01-hola-mundo.js"> 01 - Hola Mundo</a> <br>
+    <a href="#" data-script="./assets/js/02-variables.js"> 02 - Variables </a> <br>
+    <a href="#" data-script="./assets/js/03-let-y-var.js"> 03 - Let y Var </a> <br>
+    <a href="#" data-script="./assets/js/04-constantes.js"> 04 - Constantes </a> <br>
+
+
+    <script>
+        
+        // Array con las URLs de los scripts
+        const scriptsCargados = new Set(); // Evita cargar un script más de una vez
+
+        document.querySelectorAll('a[data-script]').forEach(enlace => {
+            
+            enlace.addEventListener('click', function (e) {
+                
+                e.preventDefault(); 
+
+                const scriptSrc = this.getAttribute('data-script');
+
+                if (!scriptsCargados.has(scriptSrc)) {
+                    
+                    const script = document.createElement('script');
+                    script.src = scriptSrc;
+                    script.async = true;
+                    script.onload = () => console.log(`Script ${scriptSrc} cargado correctamente.`);
+                    script.onerror = () => console.error(`Error al cargar el script ${scriptSrc}.`);
+
+                    document.body.appendChild(script);
+                    scriptsCargados.add(scriptSrc); // Marcar como cargado
+                } else {
+                    console.log('\n');
+                    console.warn(`El script ${scriptSrc} ya está cargado.`);
+                    console.log('\n');
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
