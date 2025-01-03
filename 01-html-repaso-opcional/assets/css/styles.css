@@ -1,0 +1,29 @@
+/*  --------------------------------------------------------------------------  */
+/*  ----------  /master-javascript-clasico-jquery-typescript-mean/  ----------  */
+/*  ----------  /01-html-repaso-opcional/  -----------------------------------  */
+/*  ----------  /assets/css/styles.css  --------------------------------------  */
+/*  --------------------------------------------------------------------------  */
+
+
+body {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#resaltado {
+    color: royalblue;
+    font-weight: bold;
+}
+
+.img__container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}

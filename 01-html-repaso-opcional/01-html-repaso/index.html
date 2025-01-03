@@ -1,0 +1,144 @@
+<!--  --------------------------------------------------------------------------  -->
+<!--  ----------  /master-javascript-clasico-jquery-typescript-mean/  ----------  -->
+<!--  ----------  /01-html-repaso-opcional/  -----------------------------------  -->
+<!--  ----------  /01-html-repaso/index.html  ----------------------------------  -->
+<!--  --------------------------------------------------------------------------  -->
+
+
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/html5-favicon.ico" type="image/x-icon">
+    <title> Repaso de HTML </title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+    <hr>
+    <h1> Titulo de mi web </h1>
+    <hr>
+
+    <h2> Etiquetas </h2>
+    <h3> Bienvenidos a mi web </h3>
+    <p> Hola que tal desde este curso </p>
+
+    <p> ¿Qué es Lorem Ipsum?
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+        texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
+        dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro
+        de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos
+        electrónicos, quedando esencialmente igual al original. <br> <br> Fue popularizado en los 60s con la creación de
+        las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de
+        autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+    </p>
+
+    <h3> Tercer encabezado de la pagina </h3>
+
+    <p>
+        Al contrario del pensamiento popular,
+        <strong> el texto de Lorem Ipsum no es simplemente texto aleatorio. </strong>
+        Tiene sus raices en una <span id="resaltado"> pieza clásica </span> de la literatura del Latin,
+        <em> que data del año <i> 45 antes de Cristo. </i> </em>
+        <blockquote> secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" </blockquote>
+    </p>
+
+    <hr>
+
+    <h2> Listas </h2>
+    <h3> Listado de Frutas . . .</h3>
+    <ol>
+        <li> Manzana </li>
+        <li> Naranja </li>
+        <li> Pera </li>
+        <li> Sandia </li>
+    </ol>
+
+    <h3> Listado de Frutas . . .</h3>
+    <ul>
+        <li> Manzana </li>
+        <ul>
+            <li> Manzana roja </li>
+            <li> Manzana verde </li>
+        </ul>
+        <li> Naranja </li>
+        <li> Pera </li>
+        <li> Sandia </li>
+    </ul>
+
+    <hr>
+
+
+    <h2> Imagenes en HTML </h2>
+    <div class="img__container">
+        <img src="../assets/img/aguila.jpg" alt="imagen de un aguila" title="foto de un aguila" width="300px" height="250px">
+        <img src="../assets/img/ardilla.jpg" alt="imagen de una ardilla" title="foto de una ardilla" width="300px" height="250px">
+    </div>
+    <hr>
+
+
+    <h2> Tablas </h2>
+    <table border="1">
+        <tr>
+            <th> Nombre </th>
+            <th> Apellidos </th>
+            <th> Pais </th>
+        </tr>
+        <tr>
+            <td> Victor </td>
+            <td> Robles </td>
+            <td> España </td>
+        </tr>
+        <tr>
+            <td> Kevin </td>
+            <td colspan="2"> Lopez </td>
+            <td> Mexico </td>
+        </tr>
+    </table>
+    <hr>
+
+
+    <h2> Formulario </h2>
+
+    <form>
+
+        <p>
+            <label for="nombre"> Nombre </label>
+            <br>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" />
+        </p>
+
+        <p>
+            <label for="descripcion"> Descripcion </label>
+            <br>
+            <textarea name="descripcion"></textarea>
+        </p>
+
+        <input type="radio" name="genero" value="hombre"> Hombre <br>
+        <input type="radio" name="genero" value="mujer"> Mujer <br>
+        <input type="radio" name="genero" value="nada"> Nada <br> <br>
+
+        <select name="genero2">
+            <option value="hombre"> Hombre </option>
+            <option value="mujer"> Mujer </option>
+            <option value="nada"> Nada </option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Enviar formulario">
+
+    </form>
+    
+    <br>
+    <hr>
+
+    <br> <br> <br> <br>
+
+</body>
+
+</html>
