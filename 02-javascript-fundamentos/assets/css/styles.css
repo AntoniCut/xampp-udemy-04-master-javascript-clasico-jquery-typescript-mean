@@ -11,18 +11,6 @@ body {
     margin: 0 auto;
 }
 
-#resaltado {
-    color: royalblue;
-    font-weight: bold;
-}
-
-.img__container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 50px;
-}
-
 h1,
 h2 {
     text-align: center;

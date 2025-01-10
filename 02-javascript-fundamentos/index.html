@@ -26,43 +26,39 @@
     <hr>
     <h1>Curso de JavaScript Clásico - Fundamentos</h1>
     <hr>
+    <br>
 
     <!-- Enlaces que cargan scripts -->
     <a href="#" data-script="./assets/js/01-hola-mundo.js"> 01 - Hola Mundo</a> <br>
     <a href="#" data-script="./assets/js/02-variables.js"> 02 - Variables </a> <br>
     <a href="#" data-script="./assets/js/03-let-y-var.js"> 03 - Let y Var </a> <br>
     <a href="#" data-script="./assets/js/04-constantes.js"> 04 - Constantes </a> <br>
+    <a href="#" data-script="./assets/js/05-tipos-de-datos.js"> 05 - Tipos de Datos </a> <br>
+    <a href="#" data-script="./assets/js/06-condicionales.js"> 06 - Condicionales </a> <br>
+    <a href="#" data-script="./assets/js/07-switch.js"> 07 - Switch </a> <br>
 
 
     <script>
-        
+
         // Array con las URLs de los scripts
-        const scriptsCargados = new Set(); // Evita cargar un script más de una vez
+        //const scriptsCargados = new Set(); // Evita cargar un script más de una vez
 
         document.querySelectorAll('a[data-script]').forEach(enlace => {
-            
+
             enlace.addEventListener('click', function (e) {
-                
-                e.preventDefault(); 
+
+                e.preventDefault();
 
                 const scriptSrc = this.getAttribute('data-script');
+                const script = document.createElement('script');
+                script.src = scriptSrc;
+                script.async = true;
+                script.onload = () => console.log(`Script ${scriptSrc} cargado correctamente.`);
+                script.onerror = () => console.error(`Error al cargar el script ${scriptSrc}.`);
+                document.body.appendChild(script);
 
-                if (!scriptsCargados.has(scriptSrc)) {
-                    
-                    const script = document.createElement('script');
-                    script.src = scriptSrc;
-                    script.async = true;
-                    script.onload = () => console.log(`Script ${scriptSrc} cargado correctamente.`);
-                    script.onerror = () => console.error(`Error al cargar el script ${scriptSrc}.`);
-
-                    document.body.appendChild(script);
-                    scriptsCargados.add(scriptSrc); // Marcar como cargado
-                } else {
-                    console.log('\n');
-                    console.warn(`El script ${scriptSrc} ya está cargado.`);
-                    console.log('\n');
-                }
             });
+            
         });
 
     </script>
