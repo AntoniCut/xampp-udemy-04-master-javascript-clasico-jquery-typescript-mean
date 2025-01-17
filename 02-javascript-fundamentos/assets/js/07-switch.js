@@ -39,5 +39,3 @@ switch (edad) {
 }
 
 console.log('Edad: ', edad, ' - ', imprime);
-
-
