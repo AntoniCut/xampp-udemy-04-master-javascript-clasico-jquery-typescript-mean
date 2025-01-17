@@ -13,30 +13,35 @@ console.warn('----------  03-let-y-var.js  -----  Cargado!!!!!  ----------');
 console.log('\n');
 
 
-//  ******  let y var  ******
+(function () {
 
-alert("Prueba con VAR");
+    //  ******  let y var  ******
 
-//  Prueba con var
-var numero = 40;
-console.log(numero);    //  valor 40
+    alert("Prueba con VAR");
 
-if(true) {
-    var numero = 50;
+    //  Prueba con var
+    var numero = 40;
+    console.log(numero);    //  valor 40
+
+    if (true) {
+        var numero = 50;
+        console.log(numero);    //  valor 50
+    }
+
     console.log(numero);    //  valor 50
-}
-
-console.log(numero);    //  valor 50
 
 
-//  Prueba con let.
-alert("Prueba con LET");
-var texto = "Curso JS victorroblesweb.es";
-console.log(texto); //  valor "JS"
+    //  Prueba con let.
+    alert("Prueba con LET");
+    var texto = "Curso JS victorroblesweb.es";
+    console.log(texto); //  valor "JS"
 
-if(true) {
-    let texto = "Curso Laravel 5 victorroblesweb.es";
-    console.log(texto); //  valor Laravel 5
-}
+    if (true) {
+        let texto = "Curso Laravel 5 victorroblesweb.es";
+        console.log(texto); //  valor Laravel 5
+    }
 
-console.log(texto);   //  valor "JS"
+    console.log(texto);   //  valor "JS"
+
+})();
+

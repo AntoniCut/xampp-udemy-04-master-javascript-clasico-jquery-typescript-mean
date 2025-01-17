@@ -13,15 +13,19 @@ console.warn('----------  04-constantes  -----  Cargado!!!!!  ----------');
 console.log('\n');
 
 
-//  ******  Constantes  ******
+(function () {
 
-//  es como una variable donde su contenido nunca cambia.
+    //  ******  Constantes  ******
 
-var web = "https://victorroblesweb.es";
+    //  es como una variable donde su contenido nunca cambia.
 
-const ip = "192.88.0.12";
+    var web = "https://victorroblesweb.es";
 
-web = "https://victorroblescursos.es";
-//ip = "222245";
+    const ip = "192.88.0.12";
 
-console.log(web, ip);
+    web = "https://victorroblescursos.es";
+    //ip = "222245";
+
+    console.log(web, ip);
+
+})();

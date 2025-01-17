@@ -12,15 +12,20 @@ console.warn('----------  10-bucle-do-while  -----  Cargado!!!!!  ----------');
 console.log('\n');
 
 
-//  ******  Bucle Do WHILE  ******
+(function () {
 
-//  Bucle es una estructura de control que se repite varias veces.
+    //  ******  Bucle Do WHILE  ******
 
-var year = 30;
+    //  Bucle es una estructura de control que se repite varias veces.
 
-do {
+    let year = 30;
 
-    alert("Solo cuando year sea mayor que 25, ahora tienes " + year + " años");
-    year--;
+    do {
 
-} while (year > 25);
+        alert("Solo cuando year sea mayor que 25, ahora tienes " + year + " años");
+        year--;
+
+    } while (year > 25);
+
+})();
+

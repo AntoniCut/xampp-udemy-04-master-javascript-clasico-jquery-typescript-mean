@@ -12,15 +12,19 @@ console.warn('----------  11-break  -----  Cargado!!!!!  ----------');
 console.log('\n');
 
 
-//  ******  Break  ******
+(function () {
 
-var year = 2018;
+    //  ******  Break  ******
 
-while(year != 1991) {
-      
-      console.log("Estamos en el año: " + year);
+    let year = 2018;
 
-      if(year == 2000) break;
-      
-      year--;
-}
+    while (year != 1991) {
+
+        console.log("Estamos en el año: " + year);
+
+        if (year == 2000) break;
+
+        year--;
+    }
+
+})();

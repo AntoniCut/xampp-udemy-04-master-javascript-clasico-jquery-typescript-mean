@@ -4,6 +4,9 @@
 /*  ----------  /assets/css/styles.css  --------------------------------------  */
 /*  --------------------------------------------------------------------------  */
 
+html {
+    font-size: 10px;
+}
 
 body {
     max-width: 1024px;
@@ -13,21 +16,79 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-size: 2.6rem;
+}
+
 h1,
 h2 {
     text-align: center;
 }
+ 
+.navbar__container {
+    display: flex;
+    justify-content: center;
+}
 
-a {
+/* Estilos generales para el navbar */
+.navbar {
+    width: 315px;
     display: block;
-    width: 300px;
-    height: 30px;
-    line-height: 30px;
-    margin-left: 100px;
-    padding-left: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: cornflowerblue;
+    background-color: #333;
+    padding: 3rem;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; 
+    color: white; 
+    font-family: Arial, sans-serif; 
+}
+
+.navbar__list {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.navbar__list:first-child {
+    font-weight: bold; 
+    font-size: 1.8rem; 
+    margin-bottom: 0.8rem; 
+}
+
+.navbar__item {
+    margin: 0.5rem 0; /* Espaciado entre elementos */
+}
+
+.navbar__item a {
+    text-decoration: none; /* Quitar subrayado */
+    color: #00d4ff; /* Color de enlace */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    display: block; /* Hacer clic en todo el área del enlace */
+    border-radius: 6px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Animación en hover */
+    font-size: 1.6rem; /* Tamaño del texto */
+}
+
+.navbar__item a:hover {
+    background-color: #555; /* Fondo al pasar el cursor */
+    color: white; /* Cambiar color del texto */
+    transform: translateX(4px); /* Efecto de desplazamiento */
+}
+
+.navbar__item a:active {
+    background-color: #222; /* Fondo al hacer clic */
+    transform: scale(0.98); /* Efecto de clic */
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%; /* Hacer el menú más ancho */
+        border-radius: 0; /* Quitar bordes redondeados */
+    }
+
+    .navbar__item a {
+        font-size: 1rem; /* Tamaño más grande para enlaces */
+        padding: 0.8rem 1.2rem; /* Más espacio interno */
+    }
 }

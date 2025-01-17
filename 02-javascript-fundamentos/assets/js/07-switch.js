@@ -13,29 +13,34 @@ console.warn('----------  07-switch  -----  Cargado!!!!!  ----------');
 console.log('\n');
 
 
-//  ******  Condicional Switch  ******
+(function () {
 
-//  Si A es (igual, mayor, menor, distinto, etc) a B entonces haz algo.
+    //  ******  Condicional Switch  ******
 
-var edad = 40;
-var imprime = "";
+    //  Si A es (igual, mayor, menor, distinto, etc) a B entonces haz algo.
 
-switch (edad) {
-      case 18:
-            imprime = "Acabas de cumplir la mayoria de edad";
-            break;
-      case 25:
-            imprime = "Ya eres un adulto";
-            break;
-      case 40:
-            imprime = "Crisis de los cuarenta";
-            break;
-      case 75:
-            imprime = "Eres un anciano";
-            break;
-      default:
-            imprime = "Tu edad es neutra";
-            break;
-}
+    let edad4 = 40;
+    let imprime2 = "";
 
-console.log('Edad: ', edad, ' - ', imprime);
+    switch (edad4) {
+        case 18:
+            imprime2 = "Acabas de cumplir la mayoria de edad";
+            break;
+        case 25:
+            imprime2 = "Ya eres un adulto";
+            break;
+        case 40:
+            imprime2 = "Crisis de los cuarenta";
+            break;
+        case 75:
+            imprime2 = "Eres un anciano";
+            break;
+        default:
+            imprime2 = "Tu edad es neutra";
+            break;
+    }
+
+    console.log('Edad: ', edad4, ' - ', imprime2);
+
+})();
+

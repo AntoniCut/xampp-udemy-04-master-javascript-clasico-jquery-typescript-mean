@@ -13,23 +13,28 @@ console.warn('----------  02-variables.js  -----  Cargado!!!!!  ----------');
 console.log('\n');
 
 
-//  Declaramos variables.
-var pais = "España";
-var continente ="Europa";
-var antiguedad = 2019;
+(function () {
 
-let prueba = "hola";
-alert(prueba);
+    //  Declaramos variables.
+    var pais = "España";
+    var continente = "Europa";
+    var antiguedad = 2019;
 
-pais = "Mexico";
-continente = "Latinoamerica";
+    let prueba = "hola";
+    alert(prueba);
 
-var pais_y_continente = pais + " " + continente;
+    pais = "Mexico";
+    continente = "Latinoamerica";
+
+    var pais_y_continente = pais + " " + continente;
 
 
-//  Mostrar por Consola.
-console.log(pais, continente, antiguedad);
-console.log(pais_y_continente);
+    //  Mostrar por Consola.
+    console.log(pais, continente, antiguedad);
+    console.log(pais_y_continente);
 
-//  Mostrar una Alerta.
-alert(pais_y_continente);
+    //  Mostrar una Alerta.
+    alert(pais_y_continente);
+
+})();
+

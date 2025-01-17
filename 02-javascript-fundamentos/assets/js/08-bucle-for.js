@@ -12,14 +12,18 @@ console.warn('----------  08-bucle-for  -----  Cargado!!!!!  ----------');
 console.log('\n');
 
 
-//  ******  Bucle FOR  ******
+(function () {
 
-//  Bucle es una estructura de control que se repite varias veces.
+    //  ******  Bucle FOR  ******
 
-var numero = 100;
+    //  Bucle es una estructura de control que se repite varias veces.
 
-for(var i = 0; i <= numero; i++) {
-      
-      console.log("Vamos por el numero: " + i);
+    let numero = 100;
 
-}
+    for (let i = 0; i <= numero; i++) {
+
+        console.log("Vamos por el numero: " + i);
+
+    }
+
+})();
