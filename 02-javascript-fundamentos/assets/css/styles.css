@@ -24,71 +24,118 @@ h1,
 h2 {
     text-align: center;
 }
- 
-.navbar__container {
-    display: flex;
-    justify-content: center;
-}
 
-/* Estilos generales para el navbar */
-.navbar {
-    width: 315px;
-    display: block;
+
+
+
+/* Estilo base del menú principal */
+.layout__navbar {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #333;
-    padding: 3rem;
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin: 0 auto; 
-    color: white; 
-    font-family: Arial, sans-serif; 
+    padding: 10px 20px;
+    font-size: 2rem;
+    /* text-align: center; */
 }
 
 .navbar__list {
-    list-style: none; 
-    margin: 0; 
-    padding: 0; 
-}
-
-.navbar__list:first-child {
-    font-weight: bold; 
-    font-size: 1.8rem; 
-    margin-bottom: 0.8rem; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 .navbar__item {
-    margin: 0.5rem 0; /* Espaciado entre elementos */
+    position: relative; 
 }
 
-.navbar__item a {
-    text-decoration: none; /* Quitar subrayado */
-    color: #00d4ff; /* Color de enlace */
-    padding: 0.5rem 1rem; /* Espaciado interno */
-    display: block; /* Hacer clic en todo el área del enlace */
-    border-radius: 6px; /* Bordes redondeados */
-    transition: all 0.3s ease; /* Animación en hover */
-    font-size: 1.6rem; /* Tamaño del texto */
+.navbar__item > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
 }
 
-.navbar__item a:hover {
-    background-color: #555; /* Fondo al pasar el cursor */
-    color: white; /* Cambiar color del texto */
-    transform: translateX(4px); /* Efecto de desplazamiento */
+.navbar__item > a:hover {
+    background-color: #555;
 }
 
-.navbar__item a:active {
-    background-color: #222; /* Fondo al hacer clic */
-    transform: scale(0.98); /* Efecto de clic */
+/* .navbar__title {
+    width: 300px;
+} */
+
+
+/* Estilo del submenú */
+.navbar-submenu__list {
+    width: 200px;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    position: absolute;
+    top: 100%; /* Posicionar debajo del elemento principal */
+    left: 0;
+    background-color: #444;
+    /* min-width: 250px; */
+    display: none; /* Ocultar el submenú por defecto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
+
+.navbar-submenu__item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 1.6rem;
+}
+
+.navbar-submenu__item a:hover {
+    background-color: #555;
+}
+
+/* Mostrar el submenú al hacer hover sobre el elemento principal */
+.navbar__item:hover .navbar-submenu__list {
+    display: block;
+}
+
+
+/*  ----------  */
+
+.layout__main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.main__label {
+    margin-top: 5rem;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+.main__results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+
+
 
 /* Estilo responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
-    .navbar {
-        width: 100%; /* Hacer el menú más ancho */
-        border-radius: 0; /* Quitar bordes redondeados */
-    }
+    
+    /* .navbar {
+        width: 100%; 
+        border-radius: 0; 
+    } */
 
     .navbar__item a {
-        font-size: 1rem; /* Tamaño más grande para enlaces */
-        padding: 0.8rem 1.2rem; /* Más espacio interno */
+        font-size: 1.2rem; 
+        padding: 0.8rem 1.2rem;
     }
 }
