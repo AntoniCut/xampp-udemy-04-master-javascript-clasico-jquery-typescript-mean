@@ -19,6 +19,9 @@
     <script>
         //alert("Hola Mundo - Fundamentos de JavaScript");
     </script>
+
+    <script src="./main.js" defer> </script>
+    
 </head>
 
 <body>
@@ -27,7 +30,6 @@
     <h1> Curso de JavaScript Clásico - Fundamentos </h1>
     <hr>
     <br>
-
 
     <nav class="layout__navbar">
 
@@ -63,7 +65,15 @@
                     <li class="navbar-submenu__item"> <a href="#" data-script="./assets/js/19-ejercicio-06-bloque-1.js"> 19 - Ejercicio 6 </a> </li>
                     <li class="navbar-submenu__item"> <a href="#" data-script="./assets/js/20-ejercicio-07-bloque-1.js"> 20 - Ejercicio 7 </a> </li>
                     <li class="navbar-submenu__item"> <a href="#" data-script="./assets/js/21-ejercicio-08-bloque-1.js"> 21 - Ejercicio 8 </a> </li>
+                </ul>
+            </li>
 
+            <li class="navbar__item">
+                <a class="navbar__title"> Funciones </a>
+                <ul class="navbar-submenu__list">
+                    <li class="navbar-submenu__item"> <a href="#" data-script="./assets/js/22-funciones.js"> 22 - Funciones </a> </li>
+                    <li class="navbar-submenu__item"> <a href="#" data-script="./assets/js/23-funciones-parametros.js"> 23 - Funciones - Parametros </a> </li>
+                    <li class="navbar-submenu__item"> <a href="#" data-script="./assets/js/24-parametros-opcionales.js"> 24 - Parametros Opcionales </a> </li>
                 </ul>
             </li>
 
@@ -78,31 +88,7 @@
         <section class="main__results"> </section>
 
     </main>
-
-
-    <script>
-
-        // Maneja los enlaces para cargar scripts
-        document.querySelectorAll('a[data-script]').forEach((enlace) => {
-
-            enlace.addEventListener('click', (e) => {
-
-                e.preventDefault();
-
-                const scriptSrc = enlace.getAttribute('data-script');
-                const script = document.createElement('script');
-
-                script.src = scriptSrc;
-                script.async = true;
-
-                script.onload = () => console.log(`Script ${scriptSrc} cargado correctamente.`);
-                script.onerror = () => console.error(`Error al cargar el script ${scriptSrc}.`);
-
-                document.body.appendChild(script);
-            });
-        });
-
-    </script>
+  
 
 </body>
 
