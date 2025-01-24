@@ -25,7 +25,8 @@ console.log('\n');
 
     let numero = parseInt(prompt("Introduce un numero:", 0));
 
-    label.innerHTML = `Tabla de multiplicar del numero ${numero}`;
+    label.innerHTML = `-----  Ejercicio 7  --  Bloque 1  ----- <br><br>`;
+    label.innerHTML += `Tabla de multiplicar del numero ${numero}`;
 
     for (let i = 1; i <= 10; i++) {
         results.innerHTML += `${numero} X ${i} =  ${numero * i} <br>`;

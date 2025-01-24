@@ -21,6 +21,9 @@ console.log('\n');
     
     //  -----------------------------------------------------------------------------
 
+    const label = document.querySelector('.main__label');
+    label.innerHTML = `-----  Ejercicio 2  --  Bloque 1  ----- <br><br>`;
+
     let numero;
     let suma = 0;
     let contador = 0;

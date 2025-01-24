@@ -26,7 +26,8 @@ console.log('\n');
     const label = document.querySelector('.main__label');
     const results = document.querySelector('.main__results');
 
-    label.innerHTML = `Los divisores del numero ${numero} son . . .`;
+    label.innerHTML = `-----  Ejercicio 5  --  Bloque 1  ----- <br><br>`;
+    label.innerHTML += `Los divisores del numero ${numero} son . . .`;
 
     for (let i = 2; i <= numero; i++) {
 

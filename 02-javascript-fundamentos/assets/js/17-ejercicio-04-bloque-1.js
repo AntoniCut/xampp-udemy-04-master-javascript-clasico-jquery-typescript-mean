@@ -27,7 +27,8 @@ console.log('\n');
     const label = document.querySelector('.main__label');
     const results = document.querySelector('.main__results');
 
-    label.innerHTML = `Numeros Impares entre ${numero1} y ${numero2} son . . .`;
+    label.innerHTML = `-----  Ejercicio 4  --  Bloque 1  ----- <br><br>`;
+    label.innerHTML += `Numeros Impares entre ${numero1} y ${numero2} son . . .`;
 
     if (numero1 < numero2) {
 

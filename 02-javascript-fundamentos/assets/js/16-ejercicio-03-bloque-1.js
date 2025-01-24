@@ -28,8 +28,9 @@ console.log('\n');
     const label = document.querySelector('.main__label');
     const results = document.querySelector('.main__results');
     
+    label.innerHTML = `-----  Ejercicio 3  --  Bloque 1  ----- <br><br>`;
         
-    label.innerHTML = `de ${numero1} a ${numero2} estan estos numeros . . .`;
+    label.innerHTML += `de ${numero1} a ${numero2} estan estos numeros . . .`;
     
     if (numero1 < numero2) {
 

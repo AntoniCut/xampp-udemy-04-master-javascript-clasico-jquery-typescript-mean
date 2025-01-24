@@ -24,7 +24,10 @@ console.log('\n');
 
     //  ---------------------------------------------------------------------
 
+    const label = document.querySelector('.main__label');
     const results = document.querySelector('.main__results');
+
+    label.innerHTML = `-----  Ejercicio 8  --  Bloque 1  ----- <br><br>`;
 
     let numero1 = parseInt(prompt("Introduce número 1:", 0));
     let numero2 = parseInt(prompt("Introduce número 2:", 0));

@@ -23,6 +23,10 @@ console.log('\n');
 
     //  --------------------------------------------------------------------
 
+
+    const label = document.querySelector('.main__label');
+    label.innerHTML = `-----  Ejercicio 1 Plus  --  Bloque 1  ----- <br><br>`;
+
     let numero1 = parseInt(prompt("Introduce el primer numero", 0));
     let numero2 = parseInt(prompt("Introduce el segundo numero", 0));
 
