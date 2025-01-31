@@ -23,7 +23,10 @@ console.log('\n');
     //  ----------------------------------------------------------------------------------------
 
     const label = document.querySelector('.main__label');
+    const results = document.querySelector('.main__results');
+
     label.innerHTML = `-----  Ejercicio 6  --  Bloque 1  ----- <br><br>`;
+    results.innerHTML = '';
 
     let numero = parseInt(prompt("Introduce un numero:", 0));
 
@@ -32,11 +35,13 @@ console.log('\n');
     if (numero % 2 == 0) {
         alert("El numero " + numero + " es par");
         console.log("El numero " + numero + " es par");
+        results.innerHTML = `El numero ${numero} es par`;
     }
 
     else {
         alert("El numero " + numero + " es impar");
         console.log("El numero " + numero + " es impar");
+        results.innerHTML = `El numero ${numero} es impar`;
     }
 
 })();

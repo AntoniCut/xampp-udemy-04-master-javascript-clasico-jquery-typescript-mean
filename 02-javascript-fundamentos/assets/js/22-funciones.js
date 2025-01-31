@@ -22,6 +22,7 @@ console.log('\n');
     const results = document.querySelector('.main__results');
 
     label.innerHTML = `-----  Funciones  ----- <br><br>`;
+    results.innerHTML = '';
 
     //  -----  Defino la Funcion  -----
     function calculadora() {

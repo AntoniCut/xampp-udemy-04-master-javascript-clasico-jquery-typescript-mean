@@ -22,6 +22,7 @@ console.log('\n');
     const results = document.querySelector('.main__results');
 
     label.innerHTML = `-----  Parametros Opcionales  ----- <br><br>`;
+    results.innerHTML = '';
 
 
     //  -----  Introducimos valores por teclado.

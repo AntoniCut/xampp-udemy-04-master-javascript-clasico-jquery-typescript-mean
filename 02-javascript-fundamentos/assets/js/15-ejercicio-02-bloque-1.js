@@ -22,7 +22,10 @@ console.log('\n');
     //  -----------------------------------------------------------------------------
 
     const label = document.querySelector('.main__label');
+    const results = document.querySelector('.main__results');
+
     label.innerHTML = `-----  Ejercicio 2  --  Bloque 1  ----- <br><br>`;
+    results.innerHTML = '';
 
     let numero;
     let suma = 0;
@@ -47,5 +50,6 @@ console.log('\n');
     console.log("Suma = ", suma, " Media = ", media);
 
     alert("La suma de los numeros introducidos es " + suma + " y la media es " + media);
+    results.innerHTML += `La suma de los numeros introducidos es ${suma} y la media es ${media}`;
 
 })();

@@ -28,6 +28,7 @@ console.log('\n');
     const results = document.querySelector('.main__results');
 
     label.innerHTML = `-----  Ejercicio 8  --  Bloque 1  ----- <br><br>`;
+    results.innerHTML = '';
 
     let numero1 = parseInt(prompt("Introduce número 1:", 0));
     let numero2 = parseInt(prompt("Introduce número 2:", 0));

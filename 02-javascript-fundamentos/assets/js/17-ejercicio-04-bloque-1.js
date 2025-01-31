@@ -29,6 +29,7 @@ console.log('\n');
 
     label.innerHTML = `-----  Ejercicio 4  --  Bloque 1  ----- <br><br>`;
     label.innerHTML += `Numeros Impares entre ${numero1} y ${numero2} son . . .`;
+    results.innerHTML = '';
 
     if (numero1 < numero2) {
 
@@ -55,6 +56,7 @@ console.log('\n');
     else {
         console.log("Los numeros son iguales");
         alert("Los numeros son iguales");
+        results.innerHTML += 'Los números son iguales';
     }
 
 

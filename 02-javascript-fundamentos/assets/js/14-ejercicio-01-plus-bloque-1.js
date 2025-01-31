@@ -25,7 +25,10 @@ console.log('\n');
 
 
     const label = document.querySelector('.main__label');
+    const results = document.querySelector('.main__results');
+
     label.innerHTML = `-----  Ejercicio 1 Plus  --  Bloque 1  ----- <br><br>`;
+    results.innerHTML = '';
 
     let numero1 = parseInt(prompt("Introduce el primer numero", 0));
     let numero2 = parseInt(prompt("Introduce el segundo numero", 0));
@@ -40,16 +43,19 @@ console.log('\n');
     if (numero1 > numero2) {
         console.log("Primer numero " + numero1 + " es mayor que el segundo numero " + numero2);
         alert("Primer numero " + numero1 + " es mayor que el segundo numero " + numero2);
+        results.innerHTML += `Primer numero ${numero1} es mayor que el segundo numero ${numero2} <br>`;
     }
 
     else if (numero1 < numero2) {
         console.log("Primer numero " + numero1 + " es menor que el segundo numero " + numero2);
         alert("Primer numero " + numero1 + " es menor que el segundo numero " + numero2);
+        results.innerHTML += `Primer numero ${numero1} es menor que el segundo numero ${numero2} <br>`;
     }
 
     else {
         console.log("Primer numero " + numero1 + " es igual que el segundo numero " + numero2);
         alert("Primer numero " + numero1 + " es igual que el segundo numero " + numero2);
+        results.innerHTML += `Primer numero ${numero1} es igual que el segundo numero ${numero2} <br>`;
     }
 
 

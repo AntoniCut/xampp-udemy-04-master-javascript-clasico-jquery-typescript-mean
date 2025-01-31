@@ -27,6 +27,7 @@ console.log('\n');
 
     label.innerHTML = `-----  Ejercicio 7  --  Bloque 1  ----- <br><br>`;
     label.innerHTML += `Tabla de multiplicar del numero ${numero}`;
+    results.innerHTML = '';
 
     for (let i = 1; i <= 10; i++) {
         results.innerHTML += `${numero} X ${i} =  ${numero * i} <br>`;
