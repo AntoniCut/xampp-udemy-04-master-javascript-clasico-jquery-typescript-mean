@@ -18,8 +18,8 @@ document.querySelectorAll('a[data-script]').forEach((enlace) => {
         script.src = scriptSrc;
         script.async = true;
 
-        script.onload = () => console.log(`Script ${scriptSrc} cargado correctamente.`);
-        script.onerror = () => console.error(`Error al cargar el script ${scriptSrc}.`);
+        script.onload = () => console.log(`\n\nScript ${scriptSrc} cargado correctamente.`);
+        script.onerror = () => console.error(`\nError al cargar el script ${scriptSrc}.`);
 
         document.body.appendChild(script);
     });
