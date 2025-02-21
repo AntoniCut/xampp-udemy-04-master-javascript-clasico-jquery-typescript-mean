@@ -1,0 +1,53 @@
+/*  --------------------------------------------------------------------------  */
+/*  ----------  /master-javascript-clasico-jquery-typescript-mean/  ----------  */
+/*  ----------  /03-javascript-en-profundidad/  ------------------------------  */
+/*  ----------  /assets/css/01-dom.css  --------------------------------------  */
+/*  --------------------------------------------------------------------------  */
+
+
+body {
+    position: relative;
+    max-width: 1024px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.encabezado-container {
+    display: block;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 120px;
+    line-height: 40px;
+    background-color: burlywood;
+}
+
+#encabezado {
+    font-size: 30px;
+    text-align: center;
+}
+
+.content-container {
+    display: block;
+    width: 100%;
+    margin-top: 150px;
+}
+
+
+#miCaja {
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+}
