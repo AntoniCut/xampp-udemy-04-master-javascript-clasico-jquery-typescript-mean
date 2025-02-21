@@ -1,0 +1,77 @@
+<!--  --------------------------------------------------------------------------  -->
+<!--  ----------  /master-javascript-clasico-jquery-typescript-mean/  ----------  -->
+<!--  ----------  /03-javascript-en-profundidad/  ------------------------------  -->
+<!--  ----------  /05-ejercicios-desarrollo-web-bloque-3/index.html  -----------  -->
+<!--  --------------------------------------------------------------------------  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon-JS-2.ico" type="image/x-icon">
+    <title> Ejercicios Desarrollo Web Bloque 3 - Master JavaScript Clásico </title>
+    <link rel="stylesheet" href="../assets/css/05-ejercicios-bloque-3.css">
+
+    <script src="../assets/js/05-ejercicios-bloque-3.js"> </script>
+
+</head>
+
+<body>
+
+    <!--  
+        1.  Formulario campos: Nombre, Apellidos y Edad.
+        2.  Boton de Enviar el formulario: submit.
+        3.  Mostrar los datos por pantalla.
+        4.  Tener un boton que al darle click nos muestra los datos actuales del formulario.
+        5.  Validacion del formulario.
+    -->
+
+    <h1 id="encabezado"> Master JavaScript Clásico - Ejercicio Bloque 3 </h1>
+
+    <br> <br>
+    <hr>
+
+    <h2> Ejercicio DOM, Eventos y Funciones </h2>
+
+    <div class="box">
+
+        <p>
+            <form action="#" method="POST" id="formulario" onsubmit="return false;">
+
+                <label for="name"> Nombre: </label> <br>
+                <input type="text" id="nombre" />
+                <span id="errorNombre" class="red"> </span> <br> <br>
+
+                <label for="apellidos"> Apellidos: </label> <br>
+                <input type="text" id="apellidos" />
+                <span id="errorApellidos" class="red"> </span> <br> <br>
+
+                <label for="edad"> Edad: </label> <br>
+                <input type="number" id="edad" />
+                <span id="errorEdad" class="red"> </span> <br> <br>
+
+                <input type="submit" value="Enviar" id="submit" /> <br>
+
+            </form>
+        </p>
+
+    </div>
+
+    
+    <div class="box dashed">
+
+        <h3> Informacion del usuario </h3>
+        <hr>
+        <p id="pNombre"> Nombre: <span> </span> </p>
+        <p id="pApellidos"> Apellidos: <span> </span> </p>
+        <p id="pEdad"> Edad: <span> </span> </p>
+
+    </div>
+    
+</body>
+
+</html>
