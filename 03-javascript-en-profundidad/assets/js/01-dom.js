@@ -15,9 +15,9 @@
     console.log('\n');
 
 
-    //  -------------------------------------------
-    //  ----------  Introducción al DOM  ----------
-    //  -------------------------------------------
+    //  ---------------------------------------------------------------------
+    //  ----------  Introducción al DOM  -  Document Object Model  ----------
+    //  ---------------------------------------------------------------------
 
     //  -----  Seleccionar un elemento por el ID  -----
     let caja1 = document.getElementById("miCaja1");
@@ -114,11 +114,5 @@
     console.log('\nclaseAmarillo', claseAmarillo);
     console.log('\nclaseVerde', claseVerde);
     
-
-    
-
-    
-    
-
 
 })();
