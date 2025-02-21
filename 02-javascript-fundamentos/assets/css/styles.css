@@ -107,6 +107,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    background-color: antiquewhite;
 }
 
 .main__label {
@@ -119,11 +120,11 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
     gap: 2rem;
-    margin-left: 5rem;
+    padding: 6rem;    
     margin-bottom: 100px;
     font-size: 1.6rem;
+    background-color: rgb(241, 226, 15);
 }
 
 
