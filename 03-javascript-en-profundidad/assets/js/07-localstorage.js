@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
     'use strict';
 
     console.clear();
-    console.warn('----------  07-localstorage-js  -----  Cargado!!!!!  ----------');
+    console.warn('----------  07-localstorage.js  -----  Cargado!!!!!  ----------');
     console.log('\n');
 
 
