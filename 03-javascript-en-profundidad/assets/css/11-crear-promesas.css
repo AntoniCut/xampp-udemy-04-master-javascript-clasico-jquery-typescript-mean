@@ -24,7 +24,8 @@ h3 {
 
 
 #usuariosReqRes,
-#usuarioJanet {
+#usuarioJanet,
+#infoProfesor {
     width: 50%;
     min-height: 100px;
     margin: 50px auto;
@@ -32,9 +33,10 @@ h3 {
     background-color: yellowgreen;
 }
 
-#usuarioJanet {
+#usuarioJanet,
+#infoProfesor {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
     justify-content: center;
     align-items: center;
