@@ -1,7 +1,7 @@
 //  --------------------------------------------------------------------------
 //  ----------  /master-javascript-clasico-jquery-typescript-mean/  ----------
 //  ----------  /03-javascript-en-profundidad/  ------------------------------
-//  ----------  /assets/js/05-ejercicios-bloque-3.js  ------------------------
+//  ----------  /assets/js/06-json-objetos-js.js  ----------------------------
 //  --------------------------------------------------------------------------
 
 
@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
     'use strict';
 
     console.clear();
-    console.warn('----------  05-ejercicios-bloque-3  -----  Cargado!!!!!  ----------');
+    console.warn('----------  06-json-objetos-js  -----  Cargado!!!!!  ----------');
     console.log('\n');
 
 
