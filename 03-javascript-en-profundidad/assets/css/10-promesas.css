@@ -1,0 +1,57 @@
+/*  --------------------------------------------------------------------------  */
+/*  ----------  /master-javascript-clasico-jquery-typescript-mean/  ----------  */
+/*  ----------  /03-javascript-en-profundidad/  ------------------------------  */
+/*  ----------  /assets/css/10-promesas.css  ---------------------------------  */
+/*  --------------------------------------------------------------------------  */
+
+
+body {
+    position: relative;
+    max-width: 1024px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 100px;
+    background-color: aliceblue;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+
+#usuariosReqRes,
+#usuarioJanet {
+    width: 50%;
+    min-height: 100px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: yellowgreen;
+}
+
+#usuarioJanet {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+button:hover {
+    background-color: darkblue;
+}
