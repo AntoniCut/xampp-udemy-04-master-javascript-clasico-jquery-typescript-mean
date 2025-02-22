@@ -14,6 +14,9 @@ document.querySelectorAll('a[data-script]').forEach((enlace) => {
 
         const scriptSrc = enlace.getAttribute('data-script');
         const script = document.createElement('script');
+        const layoutMain = document.querySelector('.layout__main');
+
+        layoutMain.style.display = 'flex';
 
         script.src = scriptSrc;
         script.async = true;
