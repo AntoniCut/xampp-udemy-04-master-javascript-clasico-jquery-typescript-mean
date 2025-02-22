@@ -22,15 +22,14 @@ window.addEventListener('load', () => {
     
     let formBorrar = document.querySelector("#formBorrarPeliculas");
     let inputBorrar = document.querySelector("#borrarPeliculas");
+    
     let ul = document.querySelector("#peliculasList");
     
+
+    //  -----  Mostrar las peliculas del localStorage al Iniciar la Aplicación  -----
     mostrarPeliculas();
     
-    //let peliculas = document.querySelector("#peliculas");
-    //let datos = document.querySelector("#datos");
-    //let eliminar = document.querySelector("#eliminar");
-
-
+    
     //  -----  Añadir Peliculas  ----- 
     formAdd.addEventListener('submit', () => {
 
@@ -59,8 +58,7 @@ window.addEventListener('load', () => {
             localStorage.removeItem(peliculaValue);  //  eliminamos en el localStorage.
             mostrarPeliculas();
         }
-            
-        
+                  
     });
 
 
@@ -69,7 +67,7 @@ window.addEventListener('load', () => {
 
         //  -----  vaciamos la lista  -----
         ul.innerHTML = '';
-        
+
         //  -----  Recorrer los elementos del localStorage y mostrar en el DOM  -----
         
         for (let indice in localStorage) {
