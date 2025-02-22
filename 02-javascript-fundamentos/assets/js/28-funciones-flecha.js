@@ -20,7 +20,7 @@ console.log('\n');
     const label = document.querySelector('.main__label');
     const results = document.querySelector('.main__results');
 
-    label.innerHTML = `-----  Funciones Anónimas y Callbacks  ----- <br><br>`;
+    label.innerHTML = `-----  Funciones Flecha  ----- <br><br>`;
     results.innerHTML = '';
 
     

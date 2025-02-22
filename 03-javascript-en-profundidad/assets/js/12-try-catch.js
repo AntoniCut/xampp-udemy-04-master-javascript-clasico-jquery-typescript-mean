@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
 
         let vector = new Array(99999999);
         console.log(vector);
-        
+
         console.log(decodeURIComponent("https://antonydev.es/pruebas"));
 
     } catch(error) {
@@ -29,7 +29,5 @@ window.addEventListener('load', () => {
         alert("¡Ha ocurrido un error en el código!");
     }
 
-
-    
 
 });
