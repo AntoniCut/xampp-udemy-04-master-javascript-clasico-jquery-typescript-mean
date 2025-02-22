@@ -1,0 +1,29 @@
+/*  --------------------------------------------------------------------------  */
+/*  ----------  /master-javascript-clasico-jquery-typescript-mean/  ----------  */
+/*  ----------  /03-javascript-en-profundidad/  ------------------------------  */
+/*  ----------  /assets/css/06-json-objetos-js.css  --------------------------  */
+/*  --------------------------------------------------------------------------  */
+
+
+body {
+    position: relative;
+    max-width: 1024px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+#renderPeliculas {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: yellowgreen;
+}

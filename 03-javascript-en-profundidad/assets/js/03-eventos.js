@@ -58,14 +58,14 @@ window.addEventListener('load', () => {
     
     //  -----  evento 'mouseover'  -----
     boton.addEventListener('mouseover', function () {
-        boton.style.background = "yellow";
-        boton.style.color = "black";
+        this.style.background = "yellow";
+        this.style.color = "black";
     });
 
     //  -----  evento 'mouseout'  -----
     boton.addEventListener('mouseout', function () {
-        boton.style.background = "green";
-        boton.style.color = "white";
+        this.style.background = "green";
+        this.style.color = "white";
     });
 
 
