@@ -1,0 +1,33 @@
+/*
+    -------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  -------------
+    ----------  /src/styles/  -----------------------------
+    ----------  /03-practica-primeros-pasos/  -------------
+    ----------  /01-practica-primeros-pasos.css  ----------
+    -------------------------------------------------------
+*/
+
+
+.main__home {
+    max-width: 102.4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.home__title {
+    color: #E6EBF1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.home__banner {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
