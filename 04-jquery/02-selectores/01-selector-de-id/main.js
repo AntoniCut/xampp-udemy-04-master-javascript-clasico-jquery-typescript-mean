@@ -2,8 +2,8 @@
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /04-jquery/  ----------------------------------------------------
-    ----------  /02-selectores  -------------------------------------------------
-    ----------  /02-selector-de-id  ---------------------------------------------
+    ----------  /02-selectores/  ------------------------------------------------
+    ----------  /01-selector-de-id/  --------------------------------------------
     ----------  /main.html  -----------------------------------------------------
     -----------------------------------------------------------------------------
 */
@@ -31,10 +31,6 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
 
         console.log('\n');
         console.warn("jQuery cargado correctamente - Version:", $.fn.jquery);
-
-        //  -----  cargamos opciones del menu para mostrar / ocultar  -----
-        //loadScript(menuDisplay);
-
 
         //  -----  cargamos el script principal del proyecto  -----
         loadScript(scriptUrl);

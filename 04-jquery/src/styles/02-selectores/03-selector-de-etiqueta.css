@@ -3,12 +3,12 @@
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /src/styles/  ---------------------------------------------------
     ----------  /02-selectores/  ------------------------------------------------
-    ----------  /01-selector-de-id.css  -----------------------------------------
+    ----------  /02-selector-de-etiqueta.css  -----------------------------------
     -----------------------------------------------------------------------------
 */
 
 
-.main__selector-de-id {
+.main__selectores-de-etiqueta {
     max-width: 102.4rem;
     width: 100%;
     /* height: 47.5rem; */
@@ -21,7 +21,7 @@
     text-align: center;
 }
 
-.selector-de-id__container {
+.selectores-de-etiqueta__container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,14 @@
     text-align: left;
 }
 
-.selector-de-id__container p {
+.selectores-de-etiqueta__container p {
     padding-left: 3rem;
+}
+
+.zebra-border {
+    border: 5px dashed blue !important;
+}
+
+.grande {
+    font-size: 3rem !important;
 }

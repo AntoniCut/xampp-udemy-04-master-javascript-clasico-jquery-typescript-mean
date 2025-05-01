@@ -2,8 +2,8 @@
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /04-jquery/  ----------------------------------------------------
-    ----------  /02-selectores  -------------------------------------------------
-    ----------  /02-selector-de-id  ---------------------------------------------
+    ----------  /02-selectores/  ------------------------------------------------
+    ----------  /03-selectores-de-etiqueta/  ------------------------------------
     ----------  /main.html  -----------------------------------------------------
     -----------------------------------------------------------------------------
 */
@@ -16,7 +16,7 @@ import { loadJQueryByCdnOLocal } from "/04-master-javascript-clasico-jquery-type
 const cdnJQuery = cdnJQuery_3_3_1;
 const localJQuery = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/local/jquery-3.3.1.min.js";
 
-const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/02-selectores/01-selector-de-id.js";
+const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/02-selectores/03-selectores-de-etiqueta.js";
 
 
 //  ------------------------------------------------------------------------------------

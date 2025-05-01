@@ -3,15 +3,15 @@
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /src/styles/  ---------------------------------------------------
     ----------  /02-selectores/  ------------------------------------------------
-    ----------  /01-selector-de-id.css  -----------------------------------------
+    ----------  /04-selectores-de-atributo.css  ---------------------------------
     -----------------------------------------------------------------------------
 */
 
 
-.main__selector-de-id {
+.main__selectores-de-atributo {
     max-width: 102.4rem;
     width: 100%;
-    /* height: 47.5rem; */
+    height: 53rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@
     text-align: center;
 }
 
-.selector-de-id__container {
+.selectores-de-atributo__container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,17 @@
     text-align: left;
 }
 
-.selector-de-id__container p {
+.selectores-de-atributo__container p {
     padding-left: 3rem;
+}
+
+.selectores-de-atributo__container li {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    background-color: cornflowerblue;
+}
+
+.btn__container {
+    margin-top: 1rem;
 }
