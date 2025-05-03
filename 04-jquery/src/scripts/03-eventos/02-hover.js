@@ -13,6 +13,7 @@
     console.log('\n')
     console.warn('-----  02-hover.js  -----');
 
+    
     //  -----  referencias al HTML  -----
 
     const $caja = $('#caja');

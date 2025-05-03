@@ -14,8 +14,6 @@
     console.warn('-----  04-blur-y-focus.js  -----');
 
     //  -----  referencias al HTML  -----
-
-
     const $nombre = $('#nombre');
     const $datos = $('#datos');
 

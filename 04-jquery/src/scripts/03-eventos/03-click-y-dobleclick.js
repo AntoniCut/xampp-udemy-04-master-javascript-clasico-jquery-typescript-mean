@@ -13,7 +13,7 @@
     console.log('\n')
     console.warn('-----  03-click-y-dobleclick.js  -----');
 
-    //  -----  referencias al HTML  -----
+    
     //  -----  referencias al HTML  -----
     const $caja = $('#caja');
     const texto = $caja.text();

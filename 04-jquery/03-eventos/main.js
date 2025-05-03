@@ -2,9 +2,8 @@
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /04-jquery/  ----------------------------------------------------
-    ----------  /04-efectos-animaciones-y-mas/  ---------------------------------
-    ----------  /01-dom-y-textos/  ----------------------------------------------
-    ----------  /index.html  ----------------------------------------------------
+    ----------  /03-eventos/  ---------------------------------------------------
+    ----------  /main.html  -----------------------------------------------------
     -----------------------------------------------------------------------------
 */
 
@@ -16,7 +15,7 @@ import { loadJQueryByCdnOLocal } from "/04-master-javascript-clasico-jquery-type
 const cdnJQuery = cdnJQuery_3_3_1;
 const localJQuery = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/local/jquery-3.3.1.min.js";
 
-const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/04-efectos/04-callback-en-funciones.js";
+const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/03-eventos/eventos.js";
 
 
 //  ------------------------------------------------------------------------------------
