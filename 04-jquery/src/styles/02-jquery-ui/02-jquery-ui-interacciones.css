@@ -3,12 +3,12 @@
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /src/styles/  ---------------------------------------------------
     ----------  /02-jquery-ui/  -------------------------------------------------
-    ----------  /01-jquery-ui-primeros-pasos.css  -------------------------------
+    ----------  /02-jquery-ui-interacciones.css  --------------------------------
     -----------------------------------------------------------------------------
 */
 
 
-.main__primeros-pasos {
+.main__interacciones {
     width: 100%;
     height: 46rem;
     display: flex;
