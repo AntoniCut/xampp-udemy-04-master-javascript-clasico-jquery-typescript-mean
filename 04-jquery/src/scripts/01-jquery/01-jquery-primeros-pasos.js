@@ -3,7 +3,7 @@
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /src/scripts/  --------------------------------------------------
     ----------  /01-jquery/  ----------------------------------------------------
-    ----------  /01-primeros-pasos.js  ------------------------------------------
+    ----------  /01-jquery-primeros-pasos.js  -----------------------------------
     -----------------------------------------------------------------------------
 */
 
@@ -11,7 +11,7 @@
 (function ($) {
 
     console.log('\n')
-    console.warn('-----  01-primeros-pasos.js  -----');
+    console.warn('-----  01-jquery-primeros-pasos.js  -----');
     alert('Aprendiendo jQuery del Master de JavaScript Clásico');
 
     const $title = $(".primeros-pasos__title");

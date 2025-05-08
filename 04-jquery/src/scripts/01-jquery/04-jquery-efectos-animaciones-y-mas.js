@@ -3,7 +3,7 @@
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /src/scripts/  --------------------------------------------------
     ----------  /01-jquery/  ----------------------------------------------------
-    ----------  /04-efectos-animaciones-y-mas.js  -------------------------------
+    ----------  /04-jquery-efectos-animaciones-y-mas.js  ------------------------
     -----------------------------------------------------------------------------
 */
 
@@ -18,7 +18,7 @@
     */
 
     console.log('\n')
-    console.warn('-----  04-efectos-animaciones-y-mas.js  -----');
+    console.warn('-----  04-jquery-efectos-animaciones-y-mas.js  -----');
 
     //  -----  referencias al HTML  -----
     const $enlaces = $('.enlace');

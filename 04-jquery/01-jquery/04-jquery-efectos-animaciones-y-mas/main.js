@@ -16,7 +16,7 @@ import { loadJQueryByCdnOLocal } from "/04-master-javascript-clasico-jquery-type
 const cdnJQuery = cdnJQuery_3_3_1;
 const localJQuery = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/local/jquery-3.3.1.min.js";
 
-const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/01-jquery/04-efectos-animaciones-y-mas.js";
+const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/01-jquery/04-jquery-efectos-animaciones-y-mas.js";
 
 
 //  ------------------------------------------------------------------------------------
