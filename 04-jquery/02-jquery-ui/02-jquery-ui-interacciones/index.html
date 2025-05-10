@@ -1,0 +1,249 @@
+<!--  
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /04-jquery/  ----------------------------------------------------
+    ----------  /02-jquery-ui/  -------------------------------------------------
+    ----------  /02-jquery-ui-interacciones/  -----------------------------------
+    ----------  /index.html  ----------------------------------------------------
+    -----------------------------------------------------------------------------
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link 
+        rel="shortcut icon" 
+        href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/favicon/jquery-favicon-original.ico" 
+        type="image/x-icon"
+    >
+    <title> Interacciones jQuery UI - jQuery del Master JavaScript Clásico </title>
+
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/layout.css">
+
+    <link rel="stylesheet" id="theme" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/02-jquery-ui/02-jquery-ui-interacciones.css">
+
+    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/02-jquery-ui/02-jquery-ui-interacciones/main.js"> </script>
+
+</head>
+
+
+<body>
+
+
+    <div class="layout">
+
+
+        <!--  ------------------------------  -->
+        <!--  ----------  HEADER  ----------  -->
+        <!--  ------------------------------  -->
+        <header class="layout__header">
+            
+            <img 
+                class="header__logo-jquery" 
+                src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" 
+                alt="Logo jQuery"
+            >
+            
+            <h1 class="header__title"> 
+                Interacciones jQuery UI
+            </h1>
+            
+            <img 
+                class="header__logo-jquery" 
+                src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" 
+                alt="Logo jQuery"
+            >
+
+        </header>
+
+
+        <!--  ------------------------------  -->
+        <!--  ----------  NAVBAR  ----------  -->
+        <!--  ------------------------------  -->
+        <nav class="layout__navbar">
+
+            <ul class="navbar__list">
+
+                <li class="navbar__item">
+                    <h3 class="item__title"> Go To Home </h3>
+                    <ul class="navbar-submenu__list">
+                        <li class="navbar-submenu__item"> 
+                            <a href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/"> Go To Home </a> 
+                        </li>
+                    </ul>
+                </li>
+                               
+            </ul>
+
+        </nav>
+        
+
+        <!--  ------------------------------  -->
+        <!--  ----------  MAIN  ------------  -->
+        <!--  ------------------------------  -->
+        <main class="layout__main">
+            
+
+            <!--  ------------------------------------------------  -->
+            <!--  ----------  1. Interacción Draggable  ----------  -->
+            <!--  ------------------------------------------------  -->
+            <section class="main__interaccion-draggable main__background">
+
+                <h2 class="main__title"> 1. Interacción Draggable </h2>
+
+                <div class="draggable__container">
+                    
+                    <div class="draggable__elemento">
+                        Hola Soy un elemento 1 de la Web!!!
+                    </div>
+    
+                    <div class="draggable__elemento">
+                        Hola Soy un elemento 2 de la Web!!!
+                    </div>
+    
+                    <div class="draggable__elemento">
+                        Hola Soy un elemento 3 de la Web!!!
+                    </div>
+    
+                    <div class="draggable__elemento">
+                        Hola Soy un elemento 4 de la Web!!!
+                    </div>
+
+                </div>
+                                
+            </section>
+
+
+            <!--  ------------------------------------------------  -->
+            <!--  ----------  2. Interacción Resizable  ----------  -->
+            <!--  ------------------------------------------------  -->
+            <section class="main__interaccion-resizable main__background">
+
+                <h2 class="main__title"> 2. Interacción Resizable </h2>
+
+                <div class="resizable__container">
+                    
+                    <div class="resizable__elemento">
+                        Hola Soy un elemento 1 de la Web!!!
+                    </div>
+    
+                    <div class="resizable__elemento">
+                        Hola Soy un elemento 2 de la Web!!!
+                    </div>
+    
+                    <div class="resizable__elemento">
+                        Hola Soy un elemento 3 de la Web!!!
+                    </div>
+    
+                    <div class="resizable__elemento">
+                        Hola Soy un elemento 4 de la Web!!!
+                    </div>
+
+                </div>
+                                
+            </section>
+
+
+            <!--  -------------------------------------------------  -->
+            <!--  ----------  3. Interacción Selectable  ----------  -->
+            <!--  -------------------------------------------------  -->
+            <section class="main__interaccion-selectable main__background">
+
+                <h2 class="main__title"> 2. Interacción Selectable </h2>
+
+                <ul class="lista-seleccionable">
+                    <li> GTA 5 </li>
+                    <li> Need For Speed </li>
+                    <li> Crash Bandicoot </li>
+                    <li> Super Mario </li>
+                    <li> Galaxian </li>
+                </ul>
+                                
+            </section>
+
+
+            <!--  ------------------------------------------------  -->
+            <!--  ----------  4. Interacción Sorteable  ----------  -->
+            <!--  ------------------------------------------------  -->
+            <section class="main__interaccion-sorteable main__background">
+
+                <h2 class="main__title"> 4. Interacción Sorteable </h2>
+
+                <ul class="lista-sorteable">
+                    <li> GTA 5 </li>
+                    <li> Need For Speed </li>
+                    <li> Crash Bandicoot </li>
+                    <li> Super Mario </li>
+                    <li> Galaxian </li>
+                </ul>
+                                
+            </section>
+
+
+            <!--  ------------------------------------------------  -->
+            <!--  ----------  5. Interacción Droppable  ----------  -->
+            <!--  ------------------------------------------------  -->
+            <section class="main__interaccion-droppable main__background">
+
+                <h2 class="main__title"> 4. Interacción Droppable </h2>
+
+                <div id="elementoMovido"> 
+                    Elemento Movible
+                </div>
+    
+                <div id="area"> 
+                    Mueve aqui el Elemento Movible
+                </div>
+                                
+            </section>
+
+            
+        </main>
+
+
+
+        <!--  --------------------------------  -->
+        <!--  ----------  FOOTER  ------------  -->
+        <!--  ------------------------------  -->
+        <footer class="layout__footer">
+            
+            <header class="footer__header">
+                
+                <img 
+                    class="footer__logo-jquery" 
+                    src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" 
+                    alt="Logo jQuery"
+                >
+                
+                <h3 class="footer__title"> 
+                    jQuery del Master JavaScript Clásico 
+                </h3>
+                
+                <img 
+                    class="footer__logo-jquery" 
+                    src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" 
+                    alt="Logo jQuery UI"
+                >
+                
+            </header>
+            
+            <div class="footer__separator"> </div>
+                        
+        </footer>
+
+    </div>
+   
+   
+</body>
+
+</html>

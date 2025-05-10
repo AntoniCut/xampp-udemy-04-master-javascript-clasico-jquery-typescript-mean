@@ -8,9 +8,16 @@
 */
 
 
-.main__interacciones {
-    width: 100%;
-    height: 46rem;
+
+/*
+    ------------------------------------
+    ----------  1. Draggable  ----------
+    ------------------------------------
+*/
+
+.main__interaccion-draggable {
+    width: 95%;
+    height: 80rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,17 +28,138 @@
     text-align: center;
 }
 
-.primeros-pasos__caja {
+.draggable__container,
+.resizable__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.draggable__container {
+    height: 80rem;
+}
+
+.draggable__elemento,
+.resizable__elemento {
     width: 25rem;
     height: 25rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    border: 4px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     background-color: #F89C15;
-    font-size: 3.6rem;
+    font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #b97d22;
+}
+
+
+
+/*
+    ------------------------------------
+    ----------  2. Resizable  ----------
+    ------------------------------------
+*/
+
+.main__interaccion-resizable {
+    width: 95%;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+
+
+/*
+    -------------------------------------
+    ----------  3. Selectable  ----------
+    ----------  4. Sorteable  -----------
+    -------------------------------------
+*/
+
+.main__interaccion-selectable,
+.main__interaccion-sorteable {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.lista-seleccionable li,
+.lista-sorteable li {
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    border: 1px solid #ccc;
+    list-style: none;
+    cursor: pointer;
+    color: white;
+    background-color: #F89C15;
+}
+
+ul .ui-selecting {
+    background: green;
+}
+
+ul .ui-selected {
+    background: blue;
+}
+
+
+
+/*
+    ------------------------------------
+    ----------  5. Droppable  ----------
+    ------------------------------------
+*/
+
+.main__interaccion-droppable {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#elementoMovido {
+    width: 10rem;
+    height: 10rem;
+    border: 4px solid red;
+    color: white;
+    background-color: #F89C15;
+}
+
+#area {
+    width: 30rem;
+    height: 30rem;
+    border: 4px solid green;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #F89C15;
+    background-color: bisque;
 }
