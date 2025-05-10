@@ -1,0 +1,49 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /02-jquery-ui/  -------------------------------------------------
+    ----------  /03-jquery-ui-animaciones-y-efectos.css  ------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+
+/*
+    ------------------------------------------------
+    ----------  1. Animaciones y Efectos  ----------
+    ------------------------------------------------
+*/
+
+.main__animaciones-y-efectos {
+    width: 95%;
+    height: 46rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.elemento {
+    background: pink;
+    float: none;
+    display: none;
+}
+
+.caja-efectos {
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #F89C15;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #b97d22;
+}
