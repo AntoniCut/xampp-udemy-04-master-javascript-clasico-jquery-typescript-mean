@@ -22,6 +22,8 @@ const localJQuery = "/04-master-javascript-clasico-jquery-typescript-mean/04-jqu
 const cdnJQueryUI = cdnJQueryUI_1_12_1;
 const localJQueryUI = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery-ui/local/jquery-ui-1.12.1.min.js";
 
+const themesJQueryUI = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery-ui/themes/themes-jquery-ui.js";
+
 const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/02-jquery-ui/04-jquery-ui-plugins-y-widgets.js";
 
 
@@ -49,6 +51,9 @@ loadJQueryByCdnOLocal( cdnJQuery, localJQuery )
                 
                 console.warn("jQuery UI cargado correctamente - Version:", $.ui.version);
                     
+                //  -----  cargamos la libreria de temas de jQuery UI  -----
+                loadScript(themesJQueryUI);
+                
                 //  -----  cargamos el script principal del proyecto  -----
                 loadScript(scriptUrl)
             })
