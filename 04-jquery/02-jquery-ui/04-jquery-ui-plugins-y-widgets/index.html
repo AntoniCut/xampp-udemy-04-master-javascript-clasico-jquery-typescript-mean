@@ -1,0 +1,233 @@
+<!--  
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /04-jquery/  ----------------------------------------------------
+    ----------  /02-jquery-ui/  -------------------------------------------------
+    ----------  /04-jquery-ui-plugins-y-widgets/  -------------------------------
+    ----------  /index.html  ----------------------------------------------------
+    -----------------------------------------------------------------------------
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link 
+        rel="shortcut icon" 
+        href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/favicon/jquery-favicon-original.ico" 
+        type="image/x-icon"
+    >
+    <title> Plugins y Widgets jQuery UI - jQuery del Master JavaScript Clásico </title>
+
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/layout.css">
+
+    <link rel="stylesheet" id="theme" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/02-jquery-ui/04-jquery-ui-plugins-y-widgets.css">
+
+    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/02-jquery-ui/04-jquery-ui-plugins-y-widgets/main.js"> </script>
+
+</head>
+
+
+<body>
+
+
+    <div class="layout">
+
+
+        <!--  ------------------------------  -->
+        <!--  ----------  HEADER  ----------  -->
+        <!--  ------------------------------  -->
+        <header class="layout__header">
+            
+            <img 
+                class="header__logo-jquery" 
+                src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" 
+                alt="Logo jQuery"
+            >
+            
+            <h1 class="header__title"> 
+                Plugins y Widgets jQuery UI
+            </h1>
+            
+            <img 
+                class="header__logo-jquery" 
+                src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" 
+                alt="Logo jQuery"
+            >
+
+        </header>
+
+
+        <!--  ------------------------------  -->
+        <!--  ----------  NAVBAR  ----------  -->
+        <!--  ------------------------------  -->
+        <nav class="layout__navbar">
+
+            <ul class="navbar__list">
+
+                <li class="navbar__item">
+                    <h3 class="item__title"> Go To Home </h3>
+                    <ul class="navbar-submenu__list">
+                        <li class="navbar-submenu__item"> 
+                            <a href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/"> Go To Home </a> 
+                        </li>
+                    </ul>
+                </li>
+                               
+            </ul>
+
+        </nav>
+        
+
+        <!--  ------------------------------  -->
+        <!--  ----------  MAIN  ------------  -->
+        <!--  ------------------------------  -->
+        <main class="layout__main">
+            
+
+            <!--  -----------------------------------  -->
+            <!--  ----------  1. Tooltips  ----------  -->
+            <!--  -----------------------------------  -->
+            <section class="main__tooltips main__background">
+
+                <h2 class="main__title"> 1. Tooltips </h2>
+
+                <div class="btn__container">
+                    <a class="enlace" href="#" title="acceder a la seccion de mis datos de esta web"> Mis datos </a>
+                    <a class="enlace" href="#" title="Logueate en esta web"> Identificarse </a>
+                    <a class="enlace" href="#" title="Ver todos mis amigos"> Amigos </a> 
+                </div>
+                
+                                                
+            </section>
+
+
+            <!--  ---------------------------------------------  -->
+            <!--  ----------  2. Cuadros de Dialogo  ----------  -->
+            <!--  ---------------------------------------------  -->
+            <section class="main__cuadros-de-dialogo main__background">
+
+                <h2 class="main__title"> 2. Cuadros de Dialogo </h2>
+
+                <button id="lanzarPopup"> Lanzame </button>
+                
+                <div id="popup" title="¿Estas seguro?">
+                    <p class="text-popup"> 
+                        Si continuas en el curso aprenderas mucho
+                        <br>
+                        jQuery y JavaScript inevitablemente 
+                    </p>
+                </div>
+                                                
+            </section>
+
+
+            <!--  -------------------------------------  -->
+            <!--  ----------  3. Calendario  ----------  -->
+            <!--  -------------------------------------  -->
+            <section class="main__calendario main__background">
+
+                <h2 class="main__title"> 3. Calendario </h2>
+
+                <input type="text" id="calendario">
+                                                
+            </section>
+
+
+            <!--  -------------------------------  -->
+            <!--  ----------  4. Tabs  ----------  -->
+            <!--  -------------------------------  -->
+            <section class="main__tabs main__background">
+
+                <h2 class="main__title"> 4. Tabs </h2>
+
+                <div id="pestanas">
+                    
+                    <ul>
+                        <li> <a href="#tabs-1"> Pestaña 1 </a> </li>
+                        <li> <a href="#tabs-2"> Pestaña 2 </a> </li>
+                        <li> <a href="#tabs-3"> Pestaña 3 </a> </li>
+                    </ul>
+                    
+                    <div id="tabs-1"> 
+                        <h3> Hola, soy la primera pestaña </h3> 
+                        <br> <hr> <br>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Nobis harum quia fugit maiores quibusdam cumque totam facilis atque dolorum, non nulla, 
+                            cupiditate est quaerat repellendus ullam nemo temporibus facere voluptatem.
+                        </p>
+                    </div>
+                    
+                    <div id="tabs-2"> 
+                        <h3> Hola, soy la segunda pestaña </h3> 
+                        <br> <hr> <br>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Nobis harum quia fugit maiores quibusdam cumque totam facilis atque dolorum, non nulla, 
+                            cupiditate est quaerat repellendus ullam nemo temporibus facere voluptatem.
+                        </p>
+                    </div>
+                    
+                    <div id="tabs-3"> 
+                        <h3> Hola, soy la tercera pestaña </h3> 
+                        <br> <hr> <br>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Nobis harum quia fugit maiores quibusdam cumque totam facilis atque dolorum, non nulla, 
+                            cupiditate est quaerat repellendus ullam nemo temporibus facere voluptatem.
+                        </p>
+                    </div>
+
+                </div>
+                                                
+            </section>
+
+                        
+        </main>
+
+
+        <!--  --------------------------------  -->
+        <!--  ----------  FOOTER  ------------  -->
+        <!--  ------------------------------  -->
+        <footer class="layout__footer">
+            
+            <header class="footer__header">
+                
+                <img 
+                    class="footer__logo-jquery" 
+                    src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" 
+                    alt="Logo jQuery"
+                >
+                
+                <h3 class="footer__title"> 
+                    jQuery del Master JavaScript Clásico 
+                </h3>
+                
+                <img 
+                    class="footer__logo-jquery" 
+                    src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" 
+                    alt="Logo jQuery UI"
+                >
+                
+            </header>
+            
+            <div class="footer__separator"> </div>
+                        
+        </footer>
+
+    </div>
+   
+   
+</body>
+
+</html>

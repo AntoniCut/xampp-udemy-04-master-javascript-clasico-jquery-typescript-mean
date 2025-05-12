@@ -1,0 +1,113 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /02-jquery-ui/  -------------------------------------------------
+    ----------  /04-jquery-ui-plugins-y-widgets.css  ----------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+
+/*
+    -----------------------------------
+    ----------  1. Tooltips  ----------
+    -----------------------------------
+*/
+
+.main__tooltips {
+    width: 95%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+
+.enlace {
+    padding: 1rem 2rem;
+    background-color: cornflowerblue;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enlace:hover {
+    background-color: rgb(24, 56, 116)
+}
+
+
+/*
+    ---------------------------------------------
+    ----------  2. Cuadros de Dialogo  ----------
+    ---------------------------------------------
+*/
+
+.main__cuadros-de-dialogo {
+    width: 95%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.text-popup {
+    font-size: 4rem;
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+}
+
+
+/*
+    -------------------------------------
+    ----------  3. Calendario  ----------
+    -------------------------------------
+*/
+
+.main__calendario {
+    width: 95%;
+    height: 46rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+
+
+/*
+    -------------------------------
+    ----------  4. Tabs  ----------
+    -------------------------------
+*/
+
+.main__tabs {
+    width: 95%;
+    min-height: 46rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#pestanas {
+    width: 100%;
+    min-height: 30rem;
+}
