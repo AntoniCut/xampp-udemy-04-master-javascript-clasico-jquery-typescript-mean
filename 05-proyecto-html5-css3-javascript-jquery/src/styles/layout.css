@@ -1,0 +1,50 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
+    ----------  /src/styles/layout.css  -----------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+@import '/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout-header.css';
+@import '/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout-navbar.css';
+@import '/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout-main.css';
+@import '/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout-footer.css';
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-image: url('/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/img/hojas.jpg');
+    background-attachment: fixed;
+}
+
+.layout {
+    max-width: 125rem;
+    width: 100%;
+    min-height: 100%;
+    margin-top: 3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem;
+    background-color: white;
+    box-shadow: 0 0 2px gray;
+}
+
+@media (max-width: 1400px) {
+
+    .layout {
+        width: 90%;
+    }
+}
