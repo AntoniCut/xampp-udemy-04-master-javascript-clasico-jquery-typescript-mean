@@ -16,18 +16,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon"
-        href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/favicon/jquery-favicon-original.ico"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
     <title> Proyecto HTML 5, CSS 3, JavaScript y jQuery - del Master JavaScript Clásico </title>
 
-    <link rel="stylesheet"
-        href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/reset.css">
-    <link rel="stylesheet"
-        href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout.css">
-
-    <!-- <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/main.js"> </script> -->
-
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout.css">
+    
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/01-inicio.css">
+    
+    <!--  ----------  Libreria momentjs  ----------  -->
+    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/src/locale/es.js"> </script>
+    <script src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/min/moment.min.js"> </script>
+        
+    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/main.js"> </script>
+    
 </head>
 
 
@@ -94,6 +97,12 @@
         <!--  ------------------------------  -->
         <section class="main__slider">
 
+            <div class="galeria" id="slider">
+                <div> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/hojas.jpg" alt="Hojas" title="Hojas"> </div>
+                <div> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/rojo.jpg" alt="Rojo" title="Rojo"> </div>
+                <div> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/cielo.jpg" alt="Cielo" title="Cielo"> </div>
+            </div>
+
         </section>
 
 
@@ -110,8 +119,14 @@
 
                 <div id="posts">
 
-                    <!--  Cargar posts desde un json  -->
+                    
+                    <!--  --------------------------------------------------  -->
+                    <!--  ----------  Cargar posts desde un json  ----------  -->
+                    <!--  --------------------------------------------------  -->
 
+
+                    <!--  ----------  Plantilla para JavaScript  ----------
+                    
                     <article class="content__post">
                         <h2 class="post__title"> Título del Artículo </h2>
                         <span class="post__date"> Fecha de publicación </span>
@@ -146,7 +161,9 @@
                             minima reprehenderit fugiat nisi porro repellendus accusamus illo.
                         </p>
                         <a href="#" class="post__more"> Leer más </a>
-                    </article>
+                    </article> 
+                    
+                    -->
 
                 </div>
 
