@@ -23,7 +23,7 @@ body {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
-    background-image: url('/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/img/hojas.jpg');
+    /* background-image: url('/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/img/hojas.jpg'); */
     background-attachment: fixed;
 }
 

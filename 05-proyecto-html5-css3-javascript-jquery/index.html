@@ -19,22 +19,43 @@
     <link rel="shortcut icon" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
     <title> Proyecto HTML 5, CSS 3, JavaScript y jQuery - del Master JavaScript Clásico </title>
 
+    <!--  ----------  styles global  ----------  -->
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/reset.css">
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout.css">
     
-    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.css">
+    <!--  ----------  styles page  ----------  -->
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/01-inicio.css">
     
+    <!--  ----------  styles selector themes  ----------  -->
+    <!-- <link rel="stylesheet" id="theme" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/themes/green.css"> -->
+    <link rel="stylesheet" id="theme" href="">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/themes/selector-theme.css">
+    
+    <!--  ----------  styles plugin bxSlider  ----------  -->
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.css">
+        
     <!--  ----------  Libreria momentjs  ----------  -->
     <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/src/locale/es.js"> </script>
     <script src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/min/moment.min.js"> </script>
-        
+    
+    <!--  ----------  script main page  ----------  -->
     <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/main.js"> </script>
     
 </head>
 
 
 <body>
+
+
+    <!--  --------------------------------------  -->
+    <!--  ----------  SELECTOR THEME  ----------  -->
+    <!--  --------------------------------------  -->
+    <div id="selectorTheme">
+        <div id="toGreen"> </div>
+        <div id="toRed"> </div>
+        <div id="toBlue"> </div>
+    </div>
+
 
 
     <div class="layout">
@@ -221,7 +242,7 @@
             - &nbsp; &nbsp; &copy; antonydev.tech
         </h2>
         
-        <a href="#" class="footer__subir"> Ir arriba </a>
+        <a href="#" class="footer__subir" id="subir"> Ir arriba </a>
 
     </footer>
 

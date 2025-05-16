@@ -85,12 +85,12 @@
     posts.forEach((item, index) => {
 
         const post = `
-                <article class="content__post">
-                    <h2 class='post__title'> ${item.title} </h2>
-                    <span class="post__date"> ${item.date} </span>
-                    <p class='post__description'> ${item.content} </p>
-                    <a class="post__more' href="#"> Leer más > </a>
-                </article>
+            <article class="content__post">
+                <h2 class='post__title'> ${item.title} </h2>
+                <span class='post__date'> ${item.date} </span>
+                <p class='post__description'> ${item.content} </p>
+                <a class='post__more' href="#"> Leer más &nbsp; > </a>
+            </article>
         `;
 
         arrPosts.push(post);

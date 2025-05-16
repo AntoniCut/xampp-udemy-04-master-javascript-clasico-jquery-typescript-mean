@@ -14,8 +14,12 @@ import { loadJQueryByCdnOLocal } from "/04-master-javascript-clasico-jquery-type
 const cdnJQuery = cdnJQuery_3_1_1;
 const localJQuery = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/local/jquery-3.1.1.min.js";
 
-const bxSlider = "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.js";
-const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/01-inicio.js";
+const scriptsUrls = [
+    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.js",
+    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/01-inicio.js",
+    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/selector-theme.js",
+    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/scroll.js"
+];
 
 
 //  ------------------------------------------------------------------------------------
@@ -31,11 +35,8 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
         console.log('\n');
         console.warn("jQuery cargado correctamente - Version:", $.fn.jquery);
 
-        //  -----  cargamos el plugins para el slider  -----
-        loadScript(bxSlider);
-
-        //  -----  cargamos el script principal del proyecto  -----
-        loadScript(scriptUrl);
+        //  -----  cargamos los scripts del arrays de scripts recorriendo las urls  -----
+        scriptsUrls.forEach( scriptUrl => loadScript(scriptUrl) );
 
     })
 

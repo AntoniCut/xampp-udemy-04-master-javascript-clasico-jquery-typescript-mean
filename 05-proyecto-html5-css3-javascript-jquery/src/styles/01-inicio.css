@@ -54,13 +54,13 @@
 
 .post__more {
     display: flex;
-    width: 10rem;
+    width: 12rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
     color: white;
-    background-color: #235e3d;
+    /* background-color: #235e3d; */
     font-size: 1.4rem;
     text-decoration: none;
     margin-top: 1rem;
