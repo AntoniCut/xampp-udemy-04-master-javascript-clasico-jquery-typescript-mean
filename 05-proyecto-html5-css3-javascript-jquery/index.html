@@ -23,23 +23,26 @@
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/reset.css">
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout.css">
     
-    <!--  ----------  styles page  ----------  -->
-    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/01-inicio.css">
+    <!--  ----------  styles secciones de página de inicio  ----------  -->
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/slider.css">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/posts.css">
     
     <!--  ----------  styles selector themes  ----------  -->
-    <!-- <link rel="stylesheet" id="theme" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/themes/green.css"> -->
-    <link rel="stylesheet" id="theme" href="">
+    <link rel="stylesheet" id="theme" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/themes/green.css">
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/themes/selector-theme.css">
     
     <!--  ----------  styles plugin bxSlider  ----------  -->
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.css">
         
-    <!--  ----------  Libreria momentjs  ----------  -->
+    <!--  ----------  Libreria momentJS  ----------  -->
     <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/src/locale/es.js"> </script>
     <script src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/min/moment.min.js"> </script>
     
-    <!--  ----------  script main page  ----------  -->
+    <!--  ----------  script page inicio  ----------  -->
     <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/main.js"> </script>
+        
+
+</head>
     
 </head>
 
@@ -57,7 +60,9 @@
     </div>
 
 
-
+    <!--  ------------------------------  -->
+    <!--  ----------  LAYOUT  ----------  -->
+    <!--  ------------------------------  -->
     <div class="layout">
 
 
@@ -65,6 +70,7 @@
         <!--  ----------  HEADER  ----------  -->
         <!--  ------------------------------  -->
         <header class="layout__header">
+
 
             <!--  ------------------  -->
             <!--  -----  LOGO  -----  -->
@@ -118,11 +124,11 @@
         <!--  ------------------------------  -->
         <section class="main__slider">
 
-            <div class="galeria" id="slider">
-                <div> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/hojas.jpg" alt="Hojas" title="Hojas"> </div>
-                <div> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/rojo.jpg" alt="Rojo" title="Rojo"> </div>
-                <div> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/cielo.jpg" alt="Cielo" title="Cielo"> </div>
-            </div>
+            <ul class="galeria" id="slider">
+                <li> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/hojas.jpg" alt="Hojas" title="Hojas"> </li>
+                <li> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/rojo.jpg" alt="Rojo" title="Rojo"> </li>
+                <li> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/cielo.jpg" alt="Cielo" title="Cielo"> </li>
+            </ul>
 
         </section>
 
@@ -196,6 +202,10 @@
             <!--  -------------------  -->
             <aside class="main__aside" id="aside">
                 
+
+                <!--  -------------------  -->
+                <!--  -----  About  -----  -->
+                <!--  -------------------  -->
                 <div id="about">
                     <h4 class="about__title"> <span> ¿Quien soy? </span> </h4>
                     <img 
@@ -211,16 +221,27 @@
                     </p>
                 </div>
 
+
+                <!--  -------------------  -->
+                <!--  -----  login  -----  -->
+                <!--  -------------------  -->
                 <div id="login">
+                    
                     <h4 class="login__title"> <span> Identificate </span> </h4>
+                    
                     <form>
-                        <label for="name"> Nombre </label>
-                        <input type="text" name="name" id="name">
-                        <label for="email"> correo </label>
-                        <input type="email" name="email">
-                        <label for="password"> password </label>
-                        <input type="password" name="password"> 
+                        
+                        <label for="formName"> Nombre </label>
+                        <input type="text" name="name" id="formName">
+                        
+                        <label for="formEmail"> correo </label>
+                        <input type="email" name="formEmail">
+                        
+                        <label for="formPassword"> password </label>
+                        <input type="password" name="formPassword"> 
+                        
                         <input type="submit" value="Entrar">
+
                     </form>
                 </div>
 
@@ -245,7 +266,7 @@
         <a href="#" class="footer__subir" id="subir"> Ir arriba </a>
 
     </footer>
-
+ 
 
 </body>
 

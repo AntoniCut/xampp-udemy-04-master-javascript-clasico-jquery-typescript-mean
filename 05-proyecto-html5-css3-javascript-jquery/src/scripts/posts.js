@@ -3,7 +3,7 @@
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
     ----------  /src/scripts/  --------------------------------------------------
-    ----------  /01-inicio.js  --------------------------------------------------
+    ----------  /posts.js  ------------------------------------------------------
     -----------------------------------------------------------------------------
 */
 
@@ -11,34 +11,11 @@
 (function ($) {
 
     console.log('\n');
-    console.warn('-----  01-inicio.js  -----');
+    console.warn('-----  posts.js  -----');
     console.log('\n');
 
 
-    /*  
-        ----------------------------------------
-        ----------  plugins bxSlider  ----------
-        ----------------------------------------
-    */
-
-    const $galeria = $('.galeria');
-
-    $galeria.bxSlider({
-        //mode: 'horizontal',
-        //mode: 'vertical',
-        mode: 'fade',
-        caption: true,
-        slideWidth: 1230,
-        responsice: true,
-        pager: true
-    });
-
-
-    /*
-        -----------------------------
-        ----------  posts  ----------
-        -----------------------------
-    */
+    //  ----------  posts  ----------
 
     const $posts = $('#posts');
     const arrPosts = [];
@@ -80,8 +57,8 @@
         }
     ]
 
-    console.log('posts =>', posts);
-    
+    //console.log('posts =>', posts);
+
     posts.forEach((item, index) => {
 
         const post = `
@@ -95,14 +72,11 @@
 
         arrPosts.push(post);
 
-        console.log('post =>', post);
+        //console.log('post =>', post);
 
     });
 
     $posts.append(arrPosts);
 
-    
+
 })(jQuery);
-
-
-

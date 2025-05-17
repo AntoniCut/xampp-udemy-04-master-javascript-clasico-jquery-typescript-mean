@@ -9,16 +9,22 @@
 
 import { cdnJQuery_3_1_1 } from "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/jquery/cdn/cdn-jquery-3.1.1.js";
 import { loadJQueryByCdnOLocal } from "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/jquery/load/load-jquery-by-cdn-local.js";
+import { bxSlider } from "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider-module.min.js";
 
 
+//  -----  carga de jQuery  -----
 const cdnJQuery = cdnJQuery_3_1_1;
 const localJQuery = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/local/jquery-3.1.1.min.js";
 
+
+//  -----  urls de los scripts a cargar  -----
 const scriptsUrls = [
-    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.js",
-    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/01-inicio.js",
+    //"/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.js",
+    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/slider.js",
+    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/posts.js",
     "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/selector-theme.js",
-    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/scroll.js"
+    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/scroll.js",
+    "/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/scripts/login.js"
 ];
 
 
@@ -26,7 +32,8 @@ const scriptsUrls = [
 //  -----  Ejecutamos la Promesa de carga de jQuery y el script del proyecto  ----------
 //  ------------------------------------------------------------------------------------
 console.warn("Iniciando carga de jQuery...");
-console.log('\n')
+console.log('\n');
+
 
 loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
 
@@ -35,9 +42,9 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
         console.log('\n');
         console.warn("jQuery cargado correctamente - Version:", $.fn.jquery);
 
-        //  -----  cargamos los scripts del arrays de scripts recorriendo las urls  -----
-        scriptsUrls.forEach( scriptUrl => loadScript(scriptUrl) );
-
+        bxSlider($);
+        scriptsUrls.forEach(scriptUrl => loadScript(scriptUrl));
+        
     })
 
     .catch(err => console.error("Error al cargar jQuery:", err));
@@ -47,6 +54,7 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
 //  ----------------------------------------------------------------------------------------
 //  ----------  Función que carga el script del proyecto de la lógica con jQuery  ----------
 //  ---------------------------------------------------------------------------------------- 
+
 function loadScript(scriptUrl) {
 
     $.ajax({

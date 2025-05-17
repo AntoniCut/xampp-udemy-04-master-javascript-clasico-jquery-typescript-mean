@@ -14,6 +14,9 @@
     console.warn('-----  scroll.js  -----');
     console.log('\n');
 
+
+    //  ----------  scroll  ----------
+
     const $htmlBody = $('html, body');
     const $subir = $('#subir');
 
@@ -24,7 +27,7 @@
         $htmlBody.animate({
             scrollTop: 0
         }, 1000);
-        
+
     });
 
 

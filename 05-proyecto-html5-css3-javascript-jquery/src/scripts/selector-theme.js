@@ -14,6 +14,9 @@
     console.warn('-----  selector-theme.js  -----');
     console.log('\n');
 
+
+    //  ----------  selector de temas  ----------
+
     const theme = $('#theme');
     const $toGreen = $('#toGreen');
     const $toRed = $('#toRed');
@@ -22,8 +25,8 @@
 
     //  -----  Cargar tema guardado en localStorage  -----
     const savedTheme = localStorage.getItem('selectedTheme');
-    
-    if (savedTheme) 
+
+    if (savedTheme)
         theme.attr('href', savedTheme);
 
 
@@ -45,7 +48,7 @@
         theme.attr('href', bluePath);
         localStorage.setItem('selectedTheme', bluePath);
     });
-    
+
 
 })(jQuery);
 

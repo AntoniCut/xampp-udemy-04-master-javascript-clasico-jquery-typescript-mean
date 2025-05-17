@@ -32,10 +32,6 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
         console.log('\n');
         console.warn("jQuery cargado correctamente - Version:", $.fn.jquery);
 
-        //  -----  cargamos opciones del menu para mostrar / ocultar  -----
-        //loadScript(menuDisplay);
-
-
         //  -----  cargamos el script principal del proyecto  -----
         loadScript(scriptUrl);
 
