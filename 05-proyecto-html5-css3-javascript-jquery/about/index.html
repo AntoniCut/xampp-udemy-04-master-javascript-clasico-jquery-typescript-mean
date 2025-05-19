@@ -2,6 +2,7 @@
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
+    ----------  /about/  --------------------------------------------------------
     ----------  /index.html  ----------------------------------------------------
     -----------------------------------------------------------------------------
 -->
@@ -17,16 +18,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
-    <title> Inicio - Proyecto HTML 5, CSS 3, JavaScript y jQuery - del Master JavaScript Clásico </title>
+    <title> About - Proyecto HTML 5, CSS 3, JavaScript y jQuery - del Master JavaScript Clásico </title>
 
+    <!--  ----------  styles jQueryUI  ----------  -->
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
+    
     <!--  ----------  styles global  ----------  -->
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/reset.css">
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout.css">
     
-    <!--  ----------  styles secciones de página de inicio  ----------  -->
+    <!--  ----------  styles secciones de página de about  ----------  -->
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/slider.css">
-    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/posts.css">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/about.css">
     
+        
     <!--  ----------  styles selector themes  ----------  -->
     <link rel="stylesheet" id="theme" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/themes/green.css">
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/themes/selector-theme.css">
@@ -34,12 +39,8 @@
     <!--  ----------  styles plugin bxSlider  ----------  -->
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.css">
         
-    <!--  ----------  Libreria momentJS  ----------  -->
-    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/src/locale/es.js"> </script>
-    <script src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/min/moment.min.js"> </script>
-    
-    <!--  ----------  script page inicio  ----------  -->
-    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/main.js"> </script>
+    <!--  ----------  script page about  ----------  -->
+    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/about/main.js"> </script>
         
 
 </head>
@@ -76,7 +77,7 @@
             <!--  -----  LOGO  -----  -->
             <!--  ------------------  -->
             <h1 class="header__title">
-                Inicio - Proyecto HTML 5, CSS 3, JavaScript y jQuery
+                About - Proyecto HTML 5, CSS 3, JavaScript y jQuery
             </h1>
 
 
@@ -94,7 +95,7 @@
                     </li>
 
                     <li class="navbar__item">
-                        <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/about/">
+                        <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/about">
                             Sobre Mí 
                         </a>
                     </li>
@@ -144,56 +145,43 @@
             <!--  -----------------------  -->
             <section class="main__content" id="content">
 
-                <!--  -----------------------------  -->
-                <!--  ----------  POSTS  ----------  -->
-                <!--  -----------------------------  -->
-                <div id="posts">
 
+                <!--  --------------------------------  -->
+                <!--  ----------  SOBRE MI  ----------  -->
+                <!--  --------------------------------  -->
+                <div class="content__about">
+                
+                    <h2 class="about__title"> Sobre mí </h2>
                     
-                    <!--  --------------------------------------------------  -->
-                    <!--  ----------  Cargar posts desde un json  ----------  -->
-                    <!--  --------------------------------------------------  -->
+                    <!--  -----  Cargar Acordeon de jQuery UI  -----  -->
+                    <div id="acordeon">
 
+                        <!--  Seccion 1  -->
+                        <h3 class="acordeon__title"> ¿Quiénes somos? </h3>
+                        <div class="acordeon__content">
+                            Somos una empresa dedicada al desarrollo de soluciones tecnológicas a medida. Nuestro equipo está formado por profesionales apasionados por la innovación, con años de experiencia en diseño web, desarrollo de software y marketing digital.
+                        </div>
 
-                    <!--  ----------  Plantilla para JavaScript  ----------
-                    
-                    <article class="content__post">
-                        <h2 class="post__title"> Título del Artículo </h2>
-                        <span class="post__date"> Fecha de publicación </span>
-                        <p class="post__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Maiores alias voluptatem aperiam facere ad sed officiis dicta inventore consequatur placeat
-                            beatae similique,
-                            minima reprehenderit fugiat nisi porro repellendus accusamus illo.
-                        </p>
-                        <a href="#" class="post__more"> Leer más </a>
-                    </article>
+                        <!--  Seccion 2  -->
+                        <h3 class="acordeon__title"> Nuestros servicios </h3>
+                        <div class="acordeon__content">
+                            Ofrecemos servicios de desarrollo web y móvil, diseño UI/UX, posicionamiento SEO, mantenimiento de sistemas y consultoría tecnológica. Nos adaptamos a las necesidades específicas de cada cliente para brindar soluciones efectivas y escalables.
+                        </div>
 
-                    <article class="content__post">
-                        <h2 class="post__title"> Título del Artículo </h2>
-                        <span class="post__date"> Fecha de publicación </span>
-                        <p class="post__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Maiores alias voluptatem aperiam facere ad sed officiis dicta inventore consequatur placeat
-                            beatae similique,
-                            minima reprehenderit fugiat nisi porro repellendus accusamus illo.
-                        </p>
-                        <a href="#" class="post__more"> Leer más </a>
-                    </article>
+                        <!--  Seccion 3  -->
+                        <h3 class="acordeon__title"> Nuestros clientes </h3>
+                        <div class="acordeon__content">
+                            Trabajamos con pequeñas y medianas empresas, emprendedores y organizaciones sin fines de lucro. Algunos de nuestros clientes incluyen startups tecnológicas, agencias de publicidad y tiendas en línea que buscan potenciar su presencia digital.
+                        </div>
 
-                    <article class="content__post">
-                        <h2 class="post__title"> Título del Artículo </h2>
-                        <span class="post__date"> Fecha de publicación </span>
-                        <p class="post__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Maiores alias voluptatem aperiam facere ad sed officiis dicta inventore consequatur placeat
-                            beatae similique,
-                            minima reprehenderit fugiat nisi porro repellendus accusamus illo.
-                        </p>
-                        <a href="#" class="post__more"> Leer más </a>
-                    </article> 
-                    
-                    -->
+                        <!--  Seccion 4  -->
+                        <h3 class="acordeon__title"> ¿Quieres conocernos más? </h3>
+                        <div class="acordeon__content">
+                            Puedes contactarnos a través de nuestro formulario en línea, seguirnos en redes sociales o agendar una reunión sin compromiso. Estaremos encantados de conocerte, escuchar tus ideas y ayudarte a hacerlas realidad.
+                        </div>
+                        
+                    </div>
+
 
                 </div>
 
@@ -210,23 +198,19 @@
                 <!--  -----  About  -----  -->
                 <!--  -------------------  -->
                 <div id="asideAbout">
-                    
                     <h4 class="aside-about__title"> <span> ¿Quien soy? </span> </h4>
-                    
                     <img 
                         class="aside-about__img" 
                         src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/caracol.jpg"
                         alt="Logo About"
                         title="Logo About"
                     >
-                    
                     <p class="aside-about__description"> 
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Debitis, repellat impedit dolores, eum ad accusamus dolorem 
                         sit perspiciatis rem, quibusdam nam! Suscipit commodi, 
                         iure quas nostrum explicabo velit? Doloribus, reiciendis?
                     </p>
-
                 </div>
 
 
@@ -251,7 +235,7 @@
                         <input type="submit" value="Entrar">
 
                     </form>
-
+                    
                 </div>
 
             </aside>

@@ -17,10 +17,11 @@
 
 
     //  -----  referencias al HTML  -----
-    const $login = $('#login');
-    const $loginForm = $('#login form');
+    const $login = $('#asideLogin');
+    const $loginForm = $('#asideLogin form');
     const $formName = $("#formName");
-    const $aboutDescription = $('.about__description');
+    const $aboutDescription = $('.aside-about__description');
+    const $logout = $('#asideLogout');
 
 
     //  -----  Función para mostrar mensaje de bienvenida  -----
@@ -28,21 +29,21 @@
         
         $aboutDescription.html(`
             <br>
-            <strong>Bienvenido, ${nombre}</strong>
+            <strong> Bienvenido, ${nombre} </strong>
             <br><br>
-            <a href='#' id='logout'>Cerrar Sesión</a>
+            <a href='#' id='asideLogout'> Cerrar Sesión </a>
         `);
 
         $login.hide();
 
         //  -----  Botón de logout dinámico  -----
-        $('#logout').on('click', function (e) {
+        $('#asideLogout').on('click', function (e) {
             
             e.preventDefault();
             
             localStorage.removeItem('formName');
-            $aboutDescription.html(''); // Limpia el mensaje
-            $login.show(); // Vuelve a mostrar el formulario
+            $aboutDescription.html('');             //  -----  Limpia el mensaje  ------------------
+            $login.show();                          //  -----  Vuelve a mostrar el formulario  -----
 
         });
     }

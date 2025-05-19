@@ -23,6 +23,14 @@ body {
     background-color: #ca3413;
 }
 
+.about__title {
+    color: #ca3413;
+}
+
+.ui-accordion-header {
+    background: #ca3413;
+}
+
 .footer__subir {
     background-color: #ca3413;
 }
