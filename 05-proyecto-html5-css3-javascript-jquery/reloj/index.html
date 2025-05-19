@@ -2,6 +2,7 @@
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
+    ----------  /reloj/  --------------------------------------------------------
     ----------  /index.html  ----------------------------------------------------
     -----------------------------------------------------------------------------
 -->
@@ -17,15 +18,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
-    <title> Inicio - Proyecto HTML 5, CSS 3, JavaScript y jQuery - del Master JavaScript Clásico </title>
+    <title> Reloj - Proyecto HTML 5, CSS 3, JavaScript y jQuery - del Master JavaScript Clásico </title>
 
     <!--  ----------  styles global  ----------  -->
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/reset.css">
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout.css">
     
-    <!--  ----------  styles secciones de página de inicio  ----------  -->
+    <!--  ----------  styles secciones de página de reloj  ----------  -->
     <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/slider.css">
-    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/posts.css">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/reloj.css">
     
     <!--  ----------  styles selector themes  ----------  -->
     <link rel="stylesheet" id="theme" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/themes/green.css">
@@ -38,8 +39,8 @@
     <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/src/locale/es.js"> </script>
     <script src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/min/moment.min.js"> </script>
     
-    <!--  ----------  script page inicio  ----------  -->
-    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/main.js"> </script>
+    <!--  ----------  script page reloj  ----------  -->
+    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/reloj/main.js"> </script>
         
 
 </head>
@@ -76,11 +77,11 @@
             <!--  -----  LOGO  -----  -->
             <!--  ------------------  -->
             <h1 class="header__title">
-                Inicio - Proyecto HTML 5, CSS 3, JavaScript y jQuery
+                Reloj - Proyecto HTML 5, CSS 3, JavaScript y jQuery
             </h1>
 
 
-            <!--  --------------------  -->
+           <!--  --------------------  -->
             <!--  -----  NAVBAR  -----  -->
             <!--  --------------------  -->
             <nav class="layout__navbar" id="menu">
@@ -114,7 +115,7 @@
                 </ul>
 
             </nav>
-            
+
 
         </header>
        
@@ -146,57 +147,9 @@
             <section class="main__content" id="content">
 
                 <!--  -----------------------------  -->
-                <!--  ----------  POSTS  ----------  -->
+                <!--  ----------  RELOJ  ----------  -->
                 <!--  -----------------------------  -->
-                <div id="posts">
-
-                    
-                    <!--  --------------------------------------------------  -->
-                    <!--  ----------  Cargar posts desde un json  ----------  -->
-                    <!--  --------------------------------------------------  -->
-
-
-                    <!--  ----------  Plantilla para JavaScript  ----------
-                    
-                    <article class="content__post">
-                        <h2 class="post__title"> Título del Artículo </h2>
-                        <span class="post__date"> Fecha de publicación </span>
-                        <p class="post__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Maiores alias voluptatem aperiam facere ad sed officiis dicta inventore consequatur placeat
-                            beatae similique,
-                            minima reprehenderit fugiat nisi porro repellendus accusamus illo.
-                        </p>
-                        <a href="#" class="post__more"> Leer más </a>
-                    </article>
-
-                    <article class="content__post">
-                        <h2 class="post__title"> Título del Artículo </h2>
-                        <span class="post__date"> Fecha de publicación </span>
-                        <p class="post__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Maiores alias voluptatem aperiam facere ad sed officiis dicta inventore consequatur placeat
-                            beatae similique,
-                            minima reprehenderit fugiat nisi porro repellendus accusamus illo.
-                        </p>
-                        <a href="#" class="post__more"> Leer más </a>
-                    </article>
-
-                    <article class="content__post">
-                        <h2 class="post__title"> Título del Artículo </h2>
-                        <span class="post__date"> Fecha de publicación </span>
-                        <p class="post__description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Maiores alias voluptatem aperiam facere ad sed officiis dicta inventore consequatur placeat
-                            beatae similique,
-                            minima reprehenderit fugiat nisi porro repellendus accusamus illo.
-                        </p>
-                        <a href="#" class="post__more"> Leer más </a>
-                    </article> 
-                    
-                    -->
-
-                </div>
+                <div id="reloj"> </div>
 
             </section>
 

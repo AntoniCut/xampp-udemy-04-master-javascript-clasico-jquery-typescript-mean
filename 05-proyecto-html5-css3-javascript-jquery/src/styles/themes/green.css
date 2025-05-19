@@ -31,6 +31,11 @@ body {
     background: #235e3d;
 }
 
+#reloj {
+    color: #235e3d;
+    border: 5px dashed #235e3d;
+}
+
 .footer__subir {
     background-color: #235e3d;
 }

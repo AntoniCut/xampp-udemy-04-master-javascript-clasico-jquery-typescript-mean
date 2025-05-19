@@ -1,0 +1,28 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /reloj.css  -----------------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+.main__content {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#reloj {
+    width: 30rem;
+    display: flex;
+    height: 10rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+}
