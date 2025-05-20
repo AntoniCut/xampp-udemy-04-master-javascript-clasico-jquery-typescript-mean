@@ -1,0 +1,266 @@
+<!--  
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
+    ----------  /contacto/  -----------------------------------------------------
+    ----------  /index.html  ----------------------------------------------------
+    -----------------------------------------------------------------------------
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> Contacto - Proyecto HTML 5, CSS 3, JavaScript y jQuery - del Master JavaScript Clásico </title>
+
+    <!--  ----------  styles jQueryUI  ----------  -->
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/libs/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
+
+    <!--  ----------  styles global  ----------  -->
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/layout.css">
+    
+    <!--  ----------  styles secciones de página de contacto  ----------  -->
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/slider.css">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/contacto.css">
+    
+    <!--  ----------  styles selector themes  ----------  -->
+    <link rel="stylesheet" id="theme" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/themes/green.css">
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/styles/themes/selector-theme.css">
+    
+    <!--  ----------  styles plugin bxSlider  ----------  -->
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.css">
+        
+    <!--  ----------  script page contacto  ----------  -->
+    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/contacto/main.js"> </script>
+        
+
+</head>
+    
+</head>
+
+
+<body>
+
+
+    <!--  --------------------------------------  -->
+    <!--  ----------  SELECTOR THEME  ----------  -->
+    <!--  --------------------------------------  -->
+    <div id="selectorTheme">
+        <div id="toGreen"> </div>
+        <div id="toRed"> </div>
+        <div id="toBlue"> </div>
+    </div>
+
+
+    <!--  ------------------------------  -->
+    <!--  ----------  LAYOUT  ----------  -->
+    <!--  ------------------------------  -->
+    <div class="layout">
+
+
+        <!--  ------------------------------  -->
+        <!--  ----------  HEADER  ----------  -->
+        <!--  ------------------------------  -->
+        <header class="layout__header">
+
+
+            <!--  ------------------  -->
+            <!--  -----  LOGO  -----  -->
+            <!--  ------------------  -->
+            <h1 class="header__title">
+                Contacto - Proyecto HTML 5, CSS 3, JavaScript y jQuery
+            </h1>
+
+
+           <!--  --------------------  -->
+            <!--  -----  NAVBAR  -----  -->
+            <!--  --------------------  -->
+            <nav class="layout__navbar" id="menu">
+
+                <ul class="navbar__list">
+
+                    <li class="navbar__item">
+                        <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/">
+                            Inicio 
+                        </a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/about/">
+                            Sobre Mí 
+                        </a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/contacto">
+                            Contacto 
+                        </a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/reloj">
+                            Reloj 
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+        </header>
+       
+
+
+        <!--  ------------------------------  -->
+        <!--  ----------  SLIDER  ----------  -->
+        <!--  ------------------------------  -->
+        <section class="main__slider">
+
+            <ul class="galeria" id="slider">
+                <li> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/hojas.jpg" alt="Hojas" title="Hojas"> </li>
+                <li> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/rojo.jpg" alt="Rojo" title="Rojo"> </li>
+                <li> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/cielo.jpg" alt="Cielo" title="Cielo"> </li>
+            </ul>
+
+        </section>
+
+
+        <!--  ------------------------------  -->
+        <!--  ----------  MAIN  ------------  -->
+        <!--  ------------------------------  -->
+        <main class="layout__main">
+
+
+            <!--  -----------------------  -->
+            <!--  -----  CONTENIDO  -----  -->
+            <!--  -----------------------  -->
+            <section class="main__content" id="content">
+
+                <!--  --------------------------------  -->
+                <!--  ----------  CONTACTO  ----------  -->
+                <!--  --------------------------------  -->
+                
+
+                    <!--  Cargar Formulario de Contacto  -->
+                    <h2 class="contact__title"> Contacto </h2>
+                    
+                    <form class="contact__form" id="form_contact">
+                        
+                        <label for="name" class="form__label"> Nombre </label>
+                        <input type="text" name="name" data-validation="alphanumeric">
+                        
+                        <label for="surname" class="form__label"> Apellido </label>
+                        <input type="text" name="surname" data-validation="alphanumeric">
+
+                        <label for="email" class="form__label"> Email </label> 
+                        <input type="email" name="email" data-validation="email">
+
+                        <label for="sex" class="form__label"> Sexo </label>
+                        <select data-validation="required" name="sex">
+                            <option value="men"> Hombre </option>
+                            <option value="woman"> Mujer </option>
+                        </select> 
+
+                        <label class="form__label"> Fecha de Nacimiento </label>
+                        <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy" for="date">
+
+                        <label class="form__label" for="years"> Edad </label>
+                        <input type="number" name="years" data-validation="number">
+
+                        <input type="submit" value="Enviar" id="enviar">
+
+                    </form>
+
+            
+            </section>
+
+
+            <!--  -------------------  -->
+            <!--  -----  ASIDE  -----  -->
+            <!--  -------------------  -->
+            <aside class="main__aside" id="aside">
+                
+
+                <!--  -------------------  -->
+                <!--  -----  About  -----  -->
+                <!--  -------------------  -->
+                <div id="asideAbout">
+                    
+                    <h4 class="aside-about__title"> <span> ¿Quien soy? </span> </h4>
+                    
+                    <img 
+                        class="aside-about__img" 
+                        src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/caracol.jpg"
+                        alt="Logo About"
+                        title="Logo About"
+                    >
+                    
+                    <p class="aside-about__description"> 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Debitis, repellat impedit dolores, eum ad accusamus dolorem 
+                        sit perspiciatis rem, quibusdam nam! Suscipit commodi, 
+                        iure quas nostrum explicabo velit? Doloribus, reiciendis?
+                    </p>
+
+                </div>
+
+
+                <!--  -------------------  -->
+                <!--  -----  login  -----  -->
+                <!--  -------------------  -->
+                <div id="asideLogin">
+                    
+                    <h4 class="aside-login__title"> <span> Identificate </span> </h4>
+                    
+                    <form>
+                        
+                        <label for="formName"> Nombre </label>
+                        <input type="text" name="name" id="formName">
+                        
+                        <label for="formEmail"> correo </label>
+                        <input type="email" name="formEmail">
+                        
+                        <label for="formPassword"> password </label>
+                        <input type="password" name="formPassword"> 
+                        
+                        <input type="submit" value="Entrar">
+
+                    </form>
+
+                </div>
+
+            </aside>
+
+
+        </main>
+
+    </div>
+
+
+    <!--  ------------------------------  -->
+    <!--  ----------  FOOTER  ----------  -->
+    <!--  ------------------------------  -->
+    <footer class="layout__footer">
+
+        <h2 class="footer__title"> 
+            Proyecto HTML 5, CSS 3 JavaScript y jQuery del Master JavaScript Cásico &nbsp; &nbsp; 
+            - &nbsp; &nbsp; &copy; antonydev.tech
+        </h2>
+        
+        <a href="#" class="footer__subir" id="subir"> Ir arriba </a>
+
+    </footer>
+ 
+
+</body>
+
+</html>

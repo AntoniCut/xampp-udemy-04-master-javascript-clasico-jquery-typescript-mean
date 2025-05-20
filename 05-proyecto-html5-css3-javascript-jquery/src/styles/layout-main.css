@@ -22,6 +22,7 @@
 .main__content {
     width: 70%;
     display: flex;
+    flex-direction: column;
     padding: 5rem;
     padding-left: 1rem;
     padding-right: 10rem;
@@ -101,13 +102,8 @@ form input[type="submit"],
 #asideLogout {
     padding: 1rem 2rem;
     border: 1px solid #ccc;
-    color: #333;
-    background-color: #eee;
+    color: #fff;
+    font-weight: 500;
     cursor: pointer;
     transition: all 300ms ease-in-out;
-}
-
-form input[type="submit"]:hover,
-#asideLogout:hover {
-    background-color: #cac3c3;
 }

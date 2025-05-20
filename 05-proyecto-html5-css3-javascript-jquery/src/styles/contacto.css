@@ -1,0 +1,47 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /contacto.css  --------------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+.contact__title {
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #235e3d;
+    margin-top: -2rem;
+}
+
+
+.contact__form {
+    width: 100%;
+    margin: 3rem;
+    font-family: Helvetica, Arial;
+}
+
+.form__label {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+}
+
+.form-error {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.4rem;
+    background: red;
+    color: white;
+    padding: 1.5rem;
+    
+}

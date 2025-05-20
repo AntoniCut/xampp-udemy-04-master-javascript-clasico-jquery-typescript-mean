@@ -31,6 +31,10 @@ body {
     background: #ca3413;
 }
 
+.contact__title {
+    color: #ca3413;
+}
+
 #reloj {
     color: #ca3413;
     border: 5px dashed #ca3413;
@@ -42,4 +46,14 @@ body {
 
 .footer__subir:hover {
     background-color: #9ca39f;
+}
+
+form input[type="submit"],
+#asideLogout {
+    background-color: #ca3413;
+}
+
+form input[type="submit"]:hover,
+#asideLogout:hover {
+    background-color: #df7057;
 }
