@@ -7,7 +7,7 @@
 */
 
 
-#selectorTheme {
+.selector__theme {
     width: 5rem;
     height: 10rem;
     position: fixed;
@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(51, 51, 51, 0.5);
-    
+
 }
 
 #toGreen,
@@ -48,4 +48,28 @@
 #toRed:hover,
 #toBlue:hover {
     transform: scale(1.1);
+}
+
+
+/*  -----  Responsive  -----  */
+
+@media (max-width: 1400px) {
+
+    .selector__theme {
+        width: 13rem;
+        height: 4rem;
+        top: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 585px) {
+
+    .selector__theme {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 }

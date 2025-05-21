@@ -17,12 +17,17 @@
 
     //  ----------  posts  ----------
 
+    //  -----  referencias al HTML  -----
     const $posts = $('#posts');
+    
+    //  -----  variables  -----
     const arrPosts = [];
     const day = moment().date();
     const month = moment().format("MMM");
     const year = moment().format("YYYY");
 
+
+    arrPosts.push('<h2 class="posts__title"> <span> Mis Posts </span> </h2>');
 
     const posts = [
 
@@ -67,6 +72,7 @@
                 <span class='post__date'> ${item.date} </span>
                 <p class='post__description'> ${item.content} </p>
                 <a class='post__more' href="#"> Leer más &nbsp; > </a>
+                <hr class='post__separator'>
             </article>
         `;
 
@@ -76,6 +82,8 @@
 
     });
 
+
+    //$posts.html('<h2 class="posts__title"> <span> Mis Posts </span> </h2>');
     $posts.append(arrPosts);
 
 

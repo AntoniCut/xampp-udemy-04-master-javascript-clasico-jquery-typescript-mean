@@ -107,3 +107,54 @@ form input[type="submit"],
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
+
+
+/*  -----  Responsive  -----  */
+
+@media (max-width: 768px) {
+    
+    .layout__main {
+        flex-direction: column;
+     }
+
+    .main__content {
+        width: 100%;
+        padding: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main__aside {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
+    .aside__about {
+        width: 40%;
+    }
+
+    .aside__login {
+        width: 40%;
+    }
+}
+
+@media (max-width: 585px) {
+    
+    .main__aside {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .aside__about {
+        width: 100%;
+    }
+
+    .aside__login {
+        width: 100%;
+    }
+}

@@ -19,6 +19,10 @@ body {
     background-color: #235e3d;
 }
 
+.posts__title {
+    color: #235e3d;
+}
+
 .post__more {
     background-color: #235e3d;
 }
@@ -32,6 +36,10 @@ body {
 }
 
 .contact__title {
+    color: #235e3d;
+}
+
+.reloj__title {
     color: #235e3d;
 }
 

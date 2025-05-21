@@ -13,18 +13,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .about__title {
-    font-size: 4rem;
+    width: 100%;
+    font-size: 3rem;
     text-align: center;
-    text-shadow: 2px 2px 2px #235e3d;
-    margin-top: -2rem;
+    text-shadow: 2px 2px 2px #b6bdb9;
+    line-height: 1rem;
+    background: url('/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/img/lines.png') repeat-x;
 }
 
-#acordeon {
+.about__title span {
+    padding: 1rem;
+    background-color: white;
+}
+
+.acordeon {
     width: 100%;
+    height: 45rem;
     margin-top: 2rem;
 }
 
@@ -65,7 +73,3 @@
 .ui-accordion .ui-accordion-header.ui-state-active::before {
     transform: rotate(90deg);
 }
-
-
-
-
