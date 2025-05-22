@@ -2,7 +2,8 @@
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
-    ----------  /src/styles/layout-navbar.css  ----------------------------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /layout-navbar.css  ---------------------------------------------
     -----------------------------------------------------------------------------
 */
 
@@ -22,6 +23,7 @@
 }
 
 .navbar__item {
+    width: 15rem;
     height: 46px;
     display: flex;
     transition: all 300ms ease-in-out;
@@ -32,6 +34,7 @@
 }
 
 .navbar__item a {
+    width: 100%;
     display: flex;
     color: white;
     text-decoration: none;
@@ -39,6 +42,22 @@
     padding-right: 3rem;
 }
 
-/* .navbar__item a:hover {
-    background-color: #235e3d;
-} */
+
+/*  ----------  Responsive  ----------  */
+
+@media (max-width: 810px) {
+    
+    .navbar__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar__list:first-child {
+        margin-left: 0;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+    
+}

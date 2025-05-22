@@ -2,13 +2,14 @@
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
-    ----------  /src/styles/themes/red.css  -------------------------------------
+    ----------  /src/styles/themes/  --------------------------------------------
+    ----------  /red.css  -------------------------------------------------------
     -----------------------------------------------------------------------------
 */
 
 
 body {
-    background-image: url('/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/img/rojo.jpg');
+    background-image: url('/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/img/rojo.webp');
 }
 
 .header__title {
@@ -20,6 +21,10 @@ body {
 }
 
 .posts__title {
+    color: #ca3413;
+}
+
+.post__title {
     color: #ca3413;
 }
 

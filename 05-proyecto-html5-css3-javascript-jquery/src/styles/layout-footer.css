@@ -2,7 +2,8 @@
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
-    ----------  /src/styles/layout-footer.css  ----------------------------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /layout-footer.css  ---------------------------------------------
     -----------------------------------------------------------------------------
 */
 
@@ -42,6 +43,9 @@
     background-color: #37e081;
 }
 
+
+/*  -----  Responsive  -----  */
+
 @media (max-width: 1400px) {
 
     .layout__footer {
@@ -54,5 +58,12 @@
     .layout__footer {
         width: 90%;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 585px) {
+
+    .layout__footer {
+        width: 100%;
     }
 }

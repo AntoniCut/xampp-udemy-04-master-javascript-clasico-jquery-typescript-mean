@@ -2,7 +2,8 @@
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
-    ----------  /src/styles/themes/selector-theme.css  --------------------------
+    ----------  /src/styles/themes/  --------------------------------------------
+    ----------  /selector-theme.css  --------------------------------------------
     -----------------------------------------------------------------------------
 */
 
@@ -59,6 +60,8 @@
         width: 13rem;
         height: 4rem;
         top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
         flex-direction: row;
         justify-content: center;
         gap: 1rem;

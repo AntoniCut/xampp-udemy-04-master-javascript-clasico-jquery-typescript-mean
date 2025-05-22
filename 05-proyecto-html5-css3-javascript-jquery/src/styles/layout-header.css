@@ -2,7 +2,8 @@
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /05-proyecto-html5-css3-javascript-jquery/  ---------------------
-    ----------  /src/styles/layout-header.css  ----------------------------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /layout-header.css  ---------------------------------------------
     -----------------------------------------------------------------------------
 */
 
@@ -17,22 +18,28 @@
 
 .header__title {
     width: 100%;
-    min-height: 8rem;
+    min-height: 10rem;
     margin-bottom: 2rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-left: 3rem;
     padding-right: 3rem;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 3rem;
     letter-spacing: 4px;
     color: white;
-    /* background-color: #235e3d; */
     text-align: center;
     text-transform: uppercase;
 }
 
+.title__page {
+    font-size: 3rem;
+}
+
+.title__proyect {
+    font-size: 2.5rem;
+}
 
 /*
     ----------------------------------
@@ -40,40 +47,19 @@
     ----------------------------------
 */
 
-/*
-@media (max-width: 840px) {
+
+@media (max-width: 785px) {
    
-    .header__logo-jquery {
-        width: 4.5rem;
-        height: 4.5rem;
+    .title__proyect {
+        font-size: 2rem;
     }
 
-    .header__title {
-        font-size: 2.8rem;
-    }
+    
 }
-
-@media (max-width: 768px) {
-   
-    .header__logo-jquery {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    .header__title {
-        font-size: 2.4rem;
-    }
-} 
 
 @media (max-width: 430px) {
    
-    .header__logo-jquery {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-
-    .header__title {
-        font-size: 2rem;
+    .title__proyect {
+        font-size: 1.5rem;
     }
 }
-*/

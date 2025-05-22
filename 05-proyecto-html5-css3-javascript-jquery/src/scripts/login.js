@@ -11,6 +11,7 @@
 
 (function ($) {
 
+
     console.log('\n');
     console.warn('-----  login.js (sin recarga) -----');
     console.log('\n');
@@ -20,51 +21,55 @@
     const $login = $('#asideLogin');
     const $loginForm = $('#asideLogin form');
     const $formName = $("#formName");
-    const $aboutDescription = $('.aside-about__description');
-    const $logout = $('#asideLogout');
+    const $descriptionLogout = $('.description__logout');
+    const $descriptionLogin = $('.description__login');
+
+    //  -----  variables  -----
+    const getName = localStorage.getItem("formName");
 
 
     //  -----  Función para mostrar mensaje de bienvenida  -----
     function mostrarBienvenida(nombre) {
         
-        $aboutDescription.html(`
-            <br>
+        //  -----  mensaja de bienbenida en el html  -----
+        $descriptionLogin.html(`
             <strong> Bienvenido, ${nombre} </strong>
-            <br><br>
             <a href='#' id='asideLogout'> Cerrar Sesión </a>
         `);
 
-        $login.hide();
-
-        //  -----  Botón de logout dinámico  -----
-        $('#asideLogout').on('click', function (e) {
-            
-            e.preventDefault();
-            
-            localStorage.removeItem('formName');
-            $aboutDescription.html('');             //  -----  Limpia el mensaje  ------------------
-            $login.show();                          //  -----  Vuelve a mostrar el formulario  -----
-
-        });
+        $descriptionLogout.hide();      //  -----  ocultamos mensaje de bienvenida  -----
+        $login.hide();                  //  -----  ocultamos formulario de login  -----        
     }
 
-    //  -----  Al cargar la página: si ya hay un nombre guardado, mostrar bienvenida  -----
-    const getName = localStorage.getItem("formName");
     
-    if (getName) 
-        mostrarBienvenida(getName);
+    //  -----  Cargar nombre si ya está en localStorage  -----
+    if (getName) mostrarBienvenida(getName);
+
     
-    //  -----  Al enviar el formulario  -----
+    //  -----  evento submit para enviar login  -----
     $loginForm.on('submit', function (e) {
         
         e.preventDefault();
-
+        
         const name = $formName.val().trim();
         
         if (name) {
             localStorage.setItem("formName", name);
             mostrarBienvenida(name);
         }
+
+    });
+
+    
+    //  -----  Botón de logout dinámico con delegación de eventos  -----
+    $(document).on('click', '#asideLogout', function (e) {
+        
+        e.preventDefault();
+        
+        localStorage.removeItem('formName');    //  -----  Limpiamos el localStorage  -----
+        $descriptionLogin.html('');             //  -----  Limpiamos el mensaje de bienvenida  -----
+        $descriptionLogout.show();              //  -----  Mostramos el mensaje de logout  -----
+        $login.show();                          //  -----  Mostramos el formulario de login  -----
     });
 
 
