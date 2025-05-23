@@ -59,3 +59,12 @@ body {
         width: 100%;
     }
 }
+
+/* @media (max-width: 380px) {
+
+    .layout {
+        padding-left: 0;
+        padding-right: 0;
+    }
+        
+} */

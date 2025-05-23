@@ -13,6 +13,11 @@
     width: 100%;
     margin-top: 5rem;
     display: flex;
+}
+
+.footer__container {
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +62,11 @@
 
     .layout__footer {
         width: 90%;
+    }
+
+    .footer__container {
         flex-direction: column;
+        align-items: center;
     }
 }
 

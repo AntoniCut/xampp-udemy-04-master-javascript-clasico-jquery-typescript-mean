@@ -55,98 +55,121 @@
     <!--  ----------  SELECTOR THEME  ----------  -->
     <!--  --------------------------------------  -->
     <div class="selector__theme" id="selectorTheme">
-        <div id="toGreen"> </div>
-        <div id="toRed"> </div>
-        <div id="toBlue"> </div>
+        
+        <div class="theme__container">
+            
+            <div id="toGreen"> </div>
+            <div id="toRed"> </div>
+            <div id="toBlue"> </div>
+            
+        </div>
+                
     </div>
 
 
     <!--  ------------------------------  -->
     <!--  ----------  LAYOUT  ----------  -->
     <!--  ------------------------------  -->
-    <div class="layout">
+    <div class="layout" id="layout">
 
 
         <!--  ------------------------------  -->
         <!--  ----------  HEADER  ----------  -->
         <!--  ------------------------------  -->
-        <header class="layout__header">
+        <header class="layout__header" id="layoutHeader">
 
 
-            <!--  ------------------  -->
-            <!--  -----  LOGO  -----  -->
-            <!--  ------------------  -->
-            <h1 class="header__title">
-                
-                <span class="title__page">
-                    About
-                </span>
-                
-                <span class="title__proyect"> 
-                    Proyecto HTML 5, CSS 3, JavaScript y jQuery
-                </span>
-                
-            </h1>
+            <div class="header__container">
 
 
-            <!--  --------------------  -->
-            <!--  -----  NAVBAR  -----  -->
-            <!--  --------------------  -->
-            <nav class="layout__navbar" id="menu">
+                <!--  ------------------  -->
+                <!--  -----  LOGO  -----  -->
+                <!--  ------------------  -->
+                <h1 class="header__title">
+                    
+                    <span class="title__page">
+                        Inicio
+                    </span>
+                    
+                    <span class="title__proyect"> 
+                        Proyecto HTML 5, CSS 3, JavaScript y jQuery
+                    </span>
+                    
+                </h1>
 
-                <ul class="navbar__list">
 
-                    <li class="navbar__item">
-                        <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/">
-                            Inicio 
-                        </a>
-                    </li>
+                <!--  --------------------  -->
+                <!--  -----  NAVBAR  -----  -->
+                <!--  --------------------  -->
+                <nav class="layout__navbar" id="layoutNavbar">
 
-                    <li class="navbar__item">
-                        <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/about/">
-                            Sobre Mí 
-                        </a>
-                    </li>
+                    <ul class="navbar__list">
 
-                    <li class="navbar__item">
-                        <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/contacto">
-                            Contacto 
-                        </a>
-                    </li>
+                        <li class="navbar__item">
+                            <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/">
+                                Inicio 
+                            </a>
+                        </li>
 
-                    <li class="navbar__item">
-                        <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/reloj">
-                            Reloj 
-                        </a>
-                    </li>
+                        <li class="navbar__item">
+                            <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/about/">
+                                Sobre Mí 
+                            </a>
+                        </li>
 
-                </ul>
+                        <li class="navbar__item">
+                            <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/contacto">
+                                Contacto 
+                            </a>
+                        </li>
 
-            </nav>
+                        <li class="navbar__item">
+                            <a href="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/reloj">
+                                Reloj 
+                            </a>
+                        </li>
 
-            
+                    </ul>
+
+                </nav>
+
+            </div>
+
         </header>
        
-
 
         <!--  ------------------------------  -->
         <!--  ----------  SLIDER  ----------  -->
         <!--  ------------------------------  -->
-        <section class="main__slider">
+        <section class="main__slider" id="slider">
 
-            <ul class="galeria" id="slider">
-                <li> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/hojas.webp" alt="Hojas" title="Hojas"> </li>
-                <li> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/rojo.webp" alt="Rojo" title="Rojo"> </li>
-                <li> <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/cielo.webp" alt="Cielo" title="Cielo"> </li>
-            </ul>
+            <div class="slider__container">
 
+                <ul class="galeria">
+                    
+                    <li> 
+                        <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/hojas.webp" alt="Hojas" title="Hojas"> 
+                    </li>
+                    
+                    <li> 
+                        <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/rojo.webp" alt="Rojo" title="Rojo"> 
+                    </li>
+                    
+                    <li> 
+                        <img src="/04-master-javascript-clasico-jquery-typescript-mean//05-proyecto-html5-css3-javascript-jquery/src/img/cielo.webp" alt="Cielo" title="Cielo"> 
+                    </li>
+
+                </ul>
+
+            </div>
+            
         </section>
 
 
         <!--  ------------------------------  -->
         <!--  ----------  MAIN  ------------  -->
         <!--  ------------------------------  -->
-        <main class="layout__main">
+        <main class="layout__main" id="layoutMain">
 
 
             <!--  -----------------------  -->
@@ -200,57 +223,64 @@
             <!--  -------------------  -->
             <!--  -----  ASIDE  -----  -->
             <!--  -------------------  -->
-            <aside class="main__aside" id="aside">
+            <aside class="main__aside" id="layoutAside">
                 
+                
+                <div class="aside__container">
 
-                <!--  -------------------  -->
-                <!--  -----  About  -----  -->
-                <!--  -------------------  -->
-                <div id="asideAbout">
-                    <h4 class="aside-about__title"> <span> ¿Quien soy? </span> </h4>
-                    <img 
-                        class="aside-about__img" 
-                        src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/img/caracol.webp"
-                        alt="Logo About"
-                        title="Logo About"
-                    >
-                    
-                    <p class="aside-about__description"> 
+                    <!--  -------------------  -->
+                    <!--  -----  About  -----  -->
+                    <!--  -------------------  -->
+                    <div class="aside__about" id="asideAbout">
                         
-                        <span class="description__logout"> 
-                            Identificate para poder entrar en la web.
-                        </span>
+                        <h4 class="aside-about__title"> <span> ¿Quien soy? </span> </h4>
+                        
+                        <img 
+                            class="aside-about__img" 
+                            src="/04-master-javascript-clasico-jquery-typescript-mean/05-proyecto-html5-css3-javascript-jquery/src/img/caracol.webp"
+                            alt="Logo About"
+                            title="Logo About"
+                        >
+                        
+                        <p class="aside-about__description"> 
+                            
+                            <span class="description__logout"> 
+                                Identificate para poder entrar en la web.
+                            </span>
 
-                        <span class="description__login"> </span>
+                            <span class="description__login"> </span>
+                            
+                        </p>
+
+                    </div>
+
+
+                    <!--  -------------------  -->
+                    <!--  -----  login  -----  -->
+                    <!--  -------------------  -->
+                    <div  class="aside__login" id="asideLogin">
                         
-                    </p>
+                        <h4 class="aside-login__title"> <span> Identificate </span> </h4>
+                        
+                        <form>
+                            
+                            <label for="formName"> Nombre </label>
+                            <input type="text" name="name" id="formName">
+                            
+                            <label for="formEmail"> correo </label>
+                            <input type="email" name="formEmail">
+                            
+                            <label for="formPassword"> password </label>
+                            <input type="password" name="formPassword"> 
+                            
+                            <input type="submit" value="Entrar">
+
+                        </form>
+
+                    </div>
 
                 </div>
-
-
-                <!--  -------------------  -->
-                <!--  -----  login  -----  -->
-                <!--  -------------------  -->
-                <div id="asideLogin">
-                    
-                    <h4 class="aside-login__title"> <span> Identificate </span> </h4>
-                    
-                    <form>
-                        
-                        <label for="formName"> Nombre </label>
-                        <input type="text" name="name" id="formName">
-                        
-                        <label for="formEmail"> correo </label>
-                        <input type="email" name="formEmail">
-                        
-                        <label for="formPassword"> password </label>
-                        <input type="password" name="formPassword"> 
-                        
-                        <input type="submit" value="Entrar">
-
-                    </form>
-                    
-                </div>
+                
 
             </aside>
 
@@ -263,15 +293,19 @@
     <!--  ------------------------------  -->
     <!--  ----------  FOOTER  ----------  -->
     <!--  ------------------------------  -->
-    <footer class="layout__footer">
+    <footer class="layout__footer" id="layoutFooter">
 
-        <h2 class="footer__title"> 
-            Proyecto HTML 5, CSS 3 JavaScript y jQuery del Master JavaScript Cásico &nbsp; &nbsp; 
-            - &nbsp; &nbsp; &copy; antonydev.tech
-        </h2>
+        <div class="footer__container">
+
+            <h2 class="footer__title"> 
+                Proyecto HTML 5, CSS 3 JavaScript y jQuery del Master JavaScript Cásico &nbsp; &nbsp; 
+                - &nbsp; &nbsp; &copy; antonydev.tech
+            </h2>
         
-        <a href="#" class="footer__subir" id="subir"> Ir arriba </a>
-
+            <a href="#" class="footer__subir" id="subir"> Ir arriba </a>
+            
+        </div>
+        
     </footer>
  
 

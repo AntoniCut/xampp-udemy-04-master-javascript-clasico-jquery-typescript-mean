@@ -27,5 +27,9 @@
     overflow-y: hidden;
 }
 
-
-
+@media (max-width: 768px) {
+    
+    .main__slider {
+        margin-bottom: 5rem;
+    }
+}
