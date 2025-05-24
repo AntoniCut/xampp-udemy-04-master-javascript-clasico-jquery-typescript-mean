@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/index.html [L]
+</IfModule>
+
+

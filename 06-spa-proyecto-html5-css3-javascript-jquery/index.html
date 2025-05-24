@@ -1,0 +1,119 @@
+<!--  
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06--spa-proyecto-html5-css3-javascript-jquery/  ----------------
+    ----------  /index.html  ----------------------------------------------------
+    -----------------------------------------------------------------------------
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link 
+        rel="shortcut icon" 
+        href="/04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/src/favicon/jquery-favicon-original.ico" 
+        type="image/x-icon"
+    >
+    
+    <title> Proyecto HTML 5, CSS 3, JavaScript y jQuery - del Master JavaScript Clásico </title>
+
+    <!--  ----------  styles jQueryUI  ----------  -->
+    <link 
+        rel="stylesheet" 
+        href="/04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery//src//libs/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
+
+    <!--  ----------  styles global  ----------  -->
+    <link 
+        rel="stylesheet" 
+        href="/04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/src/styles/reset.css"
+    >
+    
+    <link 
+        rel="stylesheet" 
+        href="/04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/src/styles/layout.css"
+    >
+    
+    <link 
+        rel="stylesheet" 
+        id="theme" 
+        href="/04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/src/styles/themes/green.css"
+    >
+        
+   
+    <!--  ----------  styles plugin bxSlider  ----------  -->
+    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.css">
+    
+    <!--  ----------  Libreria momentJS  ----------  -->
+    <!-- <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/locale/es.js"> </script> -->
+    <script src="/04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/min/moment.min.js"> </script>
+    
+
+    <!--  ----------  script page inicio  ----------  -->
+    <script 
+        type="module" 
+        src="/04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/main.js"
+    > </script>
+        
+
+</head>
+    
+
+<body>
+   
+
+    <!--  ----------  SELECTOR THEME  ----------  -->
+    <div class="selector__theme" id="selectorTheme"> </div>
+
+    
+    <!--  ----------  LAYOUT  ----------  -->
+    <div class="layout" id="layout">
+
+        
+        <!--  ----------  HEADER  ----------  -->
+        <header class="layout__header" id="layoutHeader"> </header>
+       
+        <!--  ----------  NAVBAR  ----------  -->
+        <nav class="layout__navbar" id="layoutNavbar"> </nav>
+
+        <!--  ----------  SLIDER  ----------  -->
+        <section class="main__slider" id="slider"> </section>
+        
+
+        <!--  ----------  CONTENEDOR MAIN del contenido principal y del aside  ----------  -->
+        <main class="main__container">
+
+            <!--  ----------  MAIN  ------------  -->
+            <section class="layout__main" id="layoutMain">
+
+                <!--  
+                    ------------------------------------------------------------------
+                    ----------  AQUI SE RENDERIZA EL CONTENIDO con PLUGIN  -----------
+                    ----------  jquery.spa-with-method-load-from-jquery.js  ----------
+                    ------------------------------------------------------------------   
+                -->
+
+            </section>
+
+            <!--  -----  ASIDE  -----  -->
+            <aside class="main__aside" id="layoutAside"> </aside>
+
+        </main>
+       
+
+    </div>
+
+    
+    <!--  ----------  FOOTER  ----------  -->
+    <footer class="layout__footer" id="layoutFooter"> </footer>
+
+
+</body>
+
+</html>
