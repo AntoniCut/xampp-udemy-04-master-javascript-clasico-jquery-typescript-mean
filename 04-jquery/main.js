@@ -11,11 +11,13 @@ import { cdnJQuery_3_3_1 } from "/04-master-javascript-clasico-jquery-typescript
 import { loadJQueryByCdnOLocal } from "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/load/load-jquery-by-cdn-local.js";
 import { loadComponentsLayout } from "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/load-components-layout.js";
 
+
+//  -----  carga de jQuery  -----
 const cdnJQuery = cdnJQuery_3_3_1;
 const localJQuery = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/local/jquery-3.3.1.min.js";
 
+//  -----  carga de las funcionalidades del menú y definir el tilulo del header  -----  -----
 const menuDisplay = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/menu-display.js";
-
 const headerTitle = '4. jQuery <br> jQuery del Master JavaScript Clásico';
 
 

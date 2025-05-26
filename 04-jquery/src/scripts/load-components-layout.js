@@ -8,6 +8,8 @@
 */
 
 
+
+
 export const loadComponentsLayout = (titleHeader) => {
 
 
@@ -42,7 +44,3 @@ export const loadComponentsLayout = (titleHeader) => {
     })(jQuery);
 
 }
-
-
-
-

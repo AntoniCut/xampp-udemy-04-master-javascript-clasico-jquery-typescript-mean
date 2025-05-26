@@ -10,54 +10,26 @@
 
 (function ($) {
 
+
     console.log('\n')
     console.warn('-----  menu-display.js  -----');
 
     const $navbarList = $('.navbar__list');
     $navbarList.hide();
 
-    $(document).off('click', '.navbar__title');
 
-    $(document).on('click', '.navbar__title', function () {
+    //  -----  Toggle del menú al hacer click en el título  -----
+    $(document).on('click', '.navbar__title', function (e) {
+        e.stopPropagation();            //  -----  Evita que el documento también lo capture  -----
         $navbarList.slideToggle();
     });
 
 
+    //  -----  Cerrar si se hace click fuera del menú  -----
+    $(document).on('click', function () {
+        $navbarList.slideUp();
+    });
+
 
 })(jQuery);
-
-
-// (function ($) {
-
-//     console.log('\n');
-//     console.warn('-----  menu-display.js  -----');
-
-//     const $navbarList = $('.navbar__list');
-//     $navbarList.hide();
-
-//     // if (window.innerWidth <= 710) {
-//     //     $navbarList.css('flex-direction', 'column').hide();
-//     // }
-
-//     $(document).off('click', '.navbar__title');
-
-//     $(document).on('click', '.navbar__title', function () {
-        
-//         if (window.innerWidth <= 710) {
-            
-//             // Asegura que ya tenga columna ANTES de hacer toggle
-//             $navbarList.css('flex-direction', 'column');
-//             $navbarList.stop(true, true).slideToggle();
-//         }
-//     });
-
-// })(jQuery);
-
-
-
-
-
-
-
-
 

@@ -1,7 +1,8 @@
 /*
     -----------------------------------------------------------------------------
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
-    ----------  /src/styles/layout-navbar.css  ----------------------------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /layout-navbar.css  ---------------------------------------------
     -----------------------------------------------------------------------------
 */
 
@@ -12,15 +13,15 @@
 }
 
 .layout__navbar {
-    position: fixed;
-    margin-top: 12rem;
+    position: absolute; 
+    z-index: 10;
+    margin-top: 15rem;
     width: 95%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    border-radius: 5px;
     padding-bottom: 2rem;
     background: linear-gradient(to right, rgb(189, 220, 230) 20%, rgb(133, 157, 189) 40%, rgb(100, 143, 230) 60%, rgb(197, 201, 221) 80%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -34,8 +35,8 @@
 }
 
 .navbar__list {
-    margin: 0;
-    padding: 0;
+    height: 65rem;
+    overflow-y: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,25 +44,27 @@
     gap: 3rem;
 }
 
-/* .navbar__list {
-    display: none;
-} */
-
 .navbar__item {
     position: relative;
     width: 30rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px 10px 10px 10px; 
     background-color: #7096E5;
-    border-radius: 0.5rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
 
 .item__title {
     width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 1.6rem;
     font-weight: bold;
     color: #fff;
@@ -74,16 +77,10 @@
 
 /*  -----  Estilo del submenú  -----  */
 .navbar-submenu__list {
-    display: none; 
-    list-style-type: none;
-    padding: 10px 0;
-    margin: 0;
-    position: absolute;
-    top: 100%; 
-    left: 0;
+    height: 25rem;
+    border-radius: 0 0 10px 10px;
     background: linear-gradient(to right, rgb(157, 200, 214) 10%, rgb(173, 198, 230) 40%, rgb(189, 208, 245) 60%, rgb(206, 212, 241) 80%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
 }
 
 .navbar-submenu__item a {
@@ -102,36 +99,28 @@
     font-weight: bold;
 }
 
-/*  -----  Mostrar el submenú al hacer hover sobre el elemento principal  -----  */
-.navbar__item:hover .navbar-submenu__list {
-    display: block;
-}
-
-.navbar__item:hover {
-    border-radius: 0.5rem 0.5rem 0 0;
-    background-color: #2d61d3;
-    transform: scale(1.05);
-}
-
 
 
 /*  -----  Responsive  -----  */
 
-/* @media (max-width: 710px) {
-   
+@media (max-width: 1380px) {
+
     .layout__navbar {
-        width: 100%;
+        margin-top: 20rem;   
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+     .layout__navbar {
+        margin-top: 2rem;   
     }
 
-    .navbar__list {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-       
-} */
+}
 
 @media (max-width: 710px) {
+    
     .layout__navbar {
         width: 100%;
     }
@@ -143,13 +132,13 @@
     }
 
     .navbar__item {
-        flex-direction: column;
-        align-items: stretch;
+        width: 100%;
+    }
+
+    .navbar-submenu__list {
+        width: 100%;
     }
 }
-
-
-
 
 @media (max-width: 565px) {
    

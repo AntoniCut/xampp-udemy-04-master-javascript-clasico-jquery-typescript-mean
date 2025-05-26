@@ -3,7 +3,7 @@
     ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
     ----------  /04-jquery/  ----------------------------------------------------
     ----------  /01-jquery/  ----------------------------------------------------
-    ----------  /02-jquery-selectores/  -----------------------------------------
+    ----------  /01-jquery-selectores/  -----------------------------------------
     ----------  /main.js  -------------------------------------------------------
     -----------------------------------------------------------------------------
 */
@@ -11,11 +11,16 @@
 
 import { cdnJQuery_3_3_1 } from "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/cdn/cdn-jquery-3.3.1.js";
 import { loadJQueryByCdnOLocal } from "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/load/load-jquery-by-cdn-local.js";
+import { loadComponentsLayout } from "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/load-components-layout.js";
 
-
+//  -----  carga de jQuery  -----
 const cdnJQuery = cdnJQuery_3_3_1;
 const localJQuery = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/local/jquery-3.3.1.min.js";
 
+
+//  -----  funcionalidades del menú y definir el tilulo del header, url script del proyecto  -----
+const menuDisplay = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/menu-display.js";
+const headerTitle = '2. Selectores en jQuery <br> Aprendiendo jQuery';
 const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/01-jquery/02-jquery-selectores.js";
 
 
@@ -32,8 +37,11 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
         console.log('\n');
         console.warn("jQuery cargado correctamente - Version:", $.fn.jquery);
 
-        //  -----  cargamos el script principal del proyecto  -----
+        //  -----  cargamos funcionalidades del menu, componentes del layout y script del proyecto  -----
+        loadScript(menuDisplay);
+        loadComponentsLayout(headerTitle);
         loadScript(scriptUrl);
+
 
     })
 
