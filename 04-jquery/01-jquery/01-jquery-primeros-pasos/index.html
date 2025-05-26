@@ -23,13 +23,29 @@
         href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/favicon/jquery-favicon-original.ico" 
         type="image/x-icon"
     >
-    <title> Aprendiendo jQuery - jQuery del Master JavaScript Clásico </title>
+    <title> 
+        1. Primeros Pasos - Aprendiendo jQuery - jQuery del Master JavaScript Clásico 
+    </title>
 
-    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/reset.css">
-    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/layout.css">
-    <link rel="stylesheet" href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/01-jquery/01-jquery-primeros-pasos.css">
+    <link 
+        rel="stylesheet" 
+        href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/reset.css"
+    >
+    
+    <link 
+        rel="stylesheet" 
+        href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/layout.css"
+    >
+    
+    <link 
+        rel="stylesheet" 
+        href="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/styles/01-jquery/01-jquery-primeros-pasos.css"
+    >
 
-    <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/01-jquery/01-jquery-primeros-pasos/main.js"> </script>
+    <script 
+        type="module" 
+        src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/01-jquery/01-jquery-primeros-pasos/main.js"
+    > </script>
 
 </head>
 
@@ -37,37 +53,65 @@
 <body>
 
 
+    <!--  ----------  LAYOUT  ----------  -->
     <div class="layout">
 
 
-        <!--  ------------------------------  -->
         <!--  ----------  HEADER  ----------  -->
-        <!--  ------------------------------  -->
         <header class="layout__header">
             
-            <img 
-                class="header__logo-jquery" 
-                src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" 
-                alt="Logo jQuery"
-            >
-            
-            <h1 class="header__title"> 
-                Primeros pasos en jQuery
-            </h1>
-            
-            <img 
-                class="header__logo-jquery" 
-                src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" 
-                alt="Logo jQuery"
-            >
+            <div class="header__container-logos header__container-logos--jquery">
+                
+                <img 
+                    class="header__jquery-banner" 
+                    src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery/jquery-banner.webp" 
+                    alt="Logo Banner jQuery"
+                >
 
+                <img 
+                    class="header__jquery-logo" 
+                    src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery/jquery-logo.webp" 
+                    alt="Logo jQuery"
+                >
+
+            </div>
+            
+            <div class="header__container-title">
+                
+                <h1 class="header__title"> 
+                    1. Primeros pasos en jQuery 
+                    <br>
+                    Aprendiendo jQuery
+                </h1>
+
+                <div class="header__separator"> </div>
+
+            </div>
+            
+
+            <div class="header__container-logos header__container-logos--jquery-ui">
+                
+                <img 
+                    class="header__jquery-ui-banner" 
+                    src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery-ui/jquery-ui-banner.webp" 
+                    alt="Logo Banner jQuery UI"
+                >
+                
+                <img 
+                    class="header__jquery-ui-logo" 
+                    src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery-ui/jquery-ui-logo.svg" 
+                    alt="Logo jQuery UI"
+                >
+
+            </div>
+            
         </header>
 
 
         <!--  ------------------------------  -->
         <!--  ----------  NAVBAR  ----------  -->
         <!--  ------------------------------  -->
-        <nav class="layout__navbar">
+        <!-- <nav class="layout__navbar">
 
             <ul class="navbar__list">
 
@@ -82,9 +126,10 @@
                                
             </ul>
 
-        </nav>
+        </nav> -->
         
 
+        <!--  ----------  MAIN  ----------  -->
         <main class="layout__main">
             
             <section class="main__primeros-pasos main__background">
@@ -95,29 +140,57 @@
             
         </main>
 
+
+        <!--  ----------  FOOTER  ----------  -->
         <footer class="layout__footer">
             
             <header class="footer__header">
-                
-                <img 
-                    class="footer__logo-jquery" 
-                    src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" 
-                    alt="Logo jQuery"
-                >
-                
-                <h3 class="footer__title"> 
-                    jQuery del Master JavaScript Clásico 
-                </h3>
-                
-                <img 
-                    class="footer__logo-jquery" 
-                    src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" 
-                    alt="Logo jQuery UI"
-                >
-                
-            </header>
+
+                <div class="footer__container-logos footer__container-logos--jquery">
+                    
+                    <img 
+                        class="footer__jquery-banner" 
+                        src="/04-master-javascript-clasico-jquery-typescript-mean//04-jquery/src/img/logo-jquery/jquery-banner.webp" 
+                        alt="Logo Banner jQuery"
+                    >
+                    
+                    <img 
+                        class="footer__jquery-logo" 
+                        src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery/jquery-logo.webp" 
+                        alt="Logo jQuery"
+                    >
+
+                </div>
             
+                <div class="footer__container-title">
+                    
+                    <h3 class="footer__title"> 
+                        jQuery del Master JavaScript Clásico 
+                    </h3>
+
+                </div>
+                                           
+                <div class="footer__container-logos footer__container-logos--jquery-ui">
+                    
+                    <img 
+                        class="footer__jquery-ui-banner" 
+                        src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery-ui/jquery-ui-banner.webp" 
+                        alt="Logo Banner jQuery UI"
+                    >
+                    
+                    <img 
+                        class="footer__jquery-ui-logo" 
+                        src="/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/img/logo-jquery-ui/jquery-ui-logo.svg" 
+                        alt="Logo jQuery UI"
+                    >
+
+                </div>
+
+            </header>
+
             <div class="footer__separator"> </div>
+            
+            
                         
         </footer>
 
