@@ -15,13 +15,20 @@ import { loadJQueryByCdnOLocal } from "/04-master-javascript-clasico-jquery-type
 import { cdnJQueryUI_1_12_1 } from "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery-ui/cdn/cdn-jquery-ui-1.12.1.js";
 import { loadJQueryUIByCdnOLocal } from "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery-ui/load/load-jquery-ui-by-cdn-local.js";
 
+import { loadComponentsLayout } from "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/load-components-layout.js";
 
+
+//  -----  carga de jQuery  -----
 const cdnJQuery = cdnJQuery_3_3_1;
 const localJQuery = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery/local/jquery-3.3.1.min.js";
 
+//  -----  carga de jQuery UI  -----
 const cdnJQueryUI = cdnJQueryUI_1_12_1;
 const localJQueryUI = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery-ui/local/jquery-ui-1.12.1.min.js";
 
+//  -----  funcionalidades del menú y definir el tilulo del header, url script del proyecto  -----
+const menuDisplay = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/menu-display.js";
+const headerTitle = '1. Primeros pasos en jQuery UI <br> Aprendiendo jQuery UI';
 const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/02-jquery-ui/01-jquery-ui-primeros-pasos.js";
 
 
@@ -31,26 +38,29 @@ const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquer
 console.warn("Iniciando carga de jQuery y jQueryUI...");
 console.log('\n')
 
-loadJQueryByCdnOLocal( cdnJQuery, localJQuery )
+loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
 
-    .then( $ => {
-        
+    .then($ => {
+
         console.warn("jQuery cargado correctamente - Version:", $.fn.jquery);
-        
+
         //  -----  cargamos jQueryUI  -----
-        loadJQueryUIByCdnOLocal( cdnJQueryUI, localJQueryUI )
-            
-            .then( $ => {
-            
-                if (!$.ui) { 
+        loadJQueryUIByCdnOLocal(cdnJQueryUI, localJQueryUI)
+
+            .then($ => {
+
+                if (!$.ui) {
                     console.log('\n');
                     throw new Error("jQuery UI no se cargó correctamente.");
                 }
-                
+
                 console.warn("jQuery UI cargado correctamente - Version:", $.ui.version);
-                    
-                //  -----  cargamos el script principal del proyecto  -----
-                loadScript(scriptUrl)
+
+                //  -----  cargamos funcionalidades del menu, componentes del layout y script del proyecto  -----
+                loadScript(menuDisplay);
+                loadComponentsLayout(headerTitle);
+                loadScript(scriptUrl);
+
             })
 
     })

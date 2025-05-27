@@ -42,7 +42,6 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
         loadComponentsLayout(headerTitle);
         loadScript(scriptUrl);
 
-
     })
 
     .catch(err => console.error("Error al cargar jQuery:", err));
