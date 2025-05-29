@@ -34,7 +34,6 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    /* background-color: aquamarine; */
 }
 
 .header__container-logos--jquery {
@@ -49,7 +48,6 @@
 .header__jquery-ui-logo {
     width: 4rem;
     height: 4rem;
-
     &:hover {
         transform: scale(1.1);
     }
@@ -60,7 +58,6 @@
     width: 20rem;
     height: auto;
     mix-blend-mode: multiply;
-
     &:hover {
         transform: scale(1.1);
     }
@@ -82,11 +79,9 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    /* background-color: aquamarine; */
 }
 
 .header__title {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,7 +94,6 @@
     width: 100%;
     height: 0.1rem;
     background-color: #E6EBF1;
-    /* background-color: black; */
 }
 
 

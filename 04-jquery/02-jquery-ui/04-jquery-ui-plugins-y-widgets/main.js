@@ -29,8 +29,7 @@ const localJQueryUI = "/04-master-javascript-clasico-jquery-typescript-mean/04-j
 //  -----  funcionalidades del menú y definir el tilulo del header, menu Themes UI, url script del proyecto  -----
 const menuDisplay = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/menu-display.js";
 const headerTitle = '4. Plugins y widgets en jQuery UI <br> Aprendiendo jQuery UI';
-const themesJQueryUI = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/libs/jquery-ui/themes/themes-jquery-ui.js";
-
+const themesJQueryUI = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/plugins/themes-jquery-ui/themes-jquery-ui.js";
 const scriptUrl = "/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/scripts/02-jquery-ui/04-jquery-ui-plugins-y-widgets.js";
 
 

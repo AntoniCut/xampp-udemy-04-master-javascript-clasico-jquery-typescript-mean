@@ -26,6 +26,7 @@ body {
 }
 
 .layout {
+    position: relative;
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -58,6 +59,3 @@ button:hover,
 input[type="submit"]:hover {
     background-color: rgb(24, 56, 116)
 }
-
-
-/* background-color: rgb(230, 235, 241); */

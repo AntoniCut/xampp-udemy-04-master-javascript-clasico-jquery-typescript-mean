@@ -20,6 +20,7 @@ export const loadComponentsLayout = (titleHeader) => {
 
         const $layoutHeader = $('#layoutHeader');
         const $layoutNavbar = $('#layoutNavbar');
+        const $layoutThemesUI = $('#layoutThemesUI');
         const $layoutFooter = $('#layoutFooter');
 
 
@@ -37,6 +38,8 @@ export const loadComponentsLayout = (titleHeader) => {
 
         $layoutNavbar.load('/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/components-layout/layout-navbar.html');
 
+        $layoutThemesUI.load('/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/plugins/themes-jquery-ui/themes-jquery-ui.html');
+        
         $layoutFooter.load('/04-master-javascript-clasico-jquery-typescript-mean/04-jquery/src/components-layout/layout-footer.html');
 
 

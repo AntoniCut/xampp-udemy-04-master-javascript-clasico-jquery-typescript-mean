@@ -8,6 +8,34 @@
 */
 
 
+/*  -----  menu principál y menú themes jQuery UI  -----  */
+
+.navbar__container {
+    width: calc(100% - 35rem);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3rem;
+    left: 1.75rem;
+}
+
+
+/*  -----  contenedor del menú themes UI  -----  */
+.navbar-themes-ui__container {
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 18rem;
+    right: 4.5rem;
+    /* margin-top: 15rem;     */
+}
+
+
+
+.layout__main {
+    margin-top: 30rem;
+}
 
 /*
     -----------------------------------
@@ -110,4 +138,52 @@
 #pestanas {
     width: 100%;
     min-height: 30rem;
+}
+
+
+/*  -----  Responsive  -----  */
+
+@media (max-width: 1380px) {
+
+    .navbar__container {
+        width: calc(100% - 37rem);
+        top: -13rem;
+    }
+
+    .navbar-themes-ui__container {
+        top: 22rem;
+ 
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .navbar__container {
+        width: 100%;
+        top: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar-themes-ui__container {
+        top: 35rem;
+        left: 50%;
+        transform: translateX(-50%);
+     }
+
+    .layout__main {
+        margin-top: 25rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar__container {
+        top: 13rem;
+        z-index: 100;
+    }
+
+    .navbar-themes-ui__container {
+        top: 38rem;
+    }
 }
